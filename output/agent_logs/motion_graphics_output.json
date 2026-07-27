@@ -1,0 +1,44 @@
+{
+  "agent": "Motion Graphics & Lower-Thirds Agent",
+  "formatted_at": "2026-07-27T23:01:13.489Z",
+  "threat_level": "CRITICAL_RED_ALERT",
+  "ticker_text": "🚨 BREAKING SECURITY ALERT: GLOBAL ZERO-DAY EXPLOIT ACTIVE • PATCH IMMEDIATELY • @NAJEEBCYBER",
+  "lower_thirds": [
+    {
+      "clip_id": 1,
+      "title": "CRITICAL SECURITY BULLETIN",
+      "subtitle": "BREAKING: URGENT CYBER SECURITY BULLETIN",
+      "color_palette": "Cyan (#00F0FF) / Red (#FF0055) / Navy (#040814)"
+    },
+    {
+      "clip_id": 2,
+      "title": "ZERO-DAY EXPLOIT DISCOVERED",
+      "subtitle": "THREAT: ZERO-DAY EXPLOIT ACTIVE",
+      "color_palette": "Cyan (#00F0FF) / Red (#FF0055) / Navy (#040814)"
+    },
+    {
+      "clip_id": 3,
+      "title": "ATTACK VECTOR TIMELINE",
+      "subtitle": "VECTOR: REMOTE CODE EXECUTION",
+      "color_palette": "Cyan (#00F0FF) / Red (#FF0055) / Navy (#040814)"
+    },
+    {
+      "clip_id": 4,
+      "title": "THREAT ACTOR PROFILE",
+      "subtitle": "APT PROFILE: ADVANCED THREAT GROUP",
+      "color_palette": "Cyan (#00F0FF) / Red (#FF0055) / Navy (#040814)"
+    },
+    {
+      "clip_id": 5,
+      "title": "IMMEDIATE PATCH ACTION",
+      "subtitle": "ACTION: APPLY EMERGENCY PATCH IMMEDIATELY",
+      "color_palette": "Cyan (#00F0FF) / Red (#FF0055) / Navy (#040814)"
+    },
+    {
+      "clip_id": 6,
+      "title": "OUTRO & COMMUNITY CTA",
+      "subtitle": "FOLLOW @NAJEEBCYBER FOR REAL-TIME ALERTS",
+      "color_palette": "Cyan (#00F0FF) / Red (#FF0055) / Navy (#040814)"
+    }
+  ]
+}
