@@ -1,7 +1,7 @@
 # CHAT RESOURCE: NajeebCyber AI Studio (NCAS)
 
 Original Shared Link: https://chatgpt.com/share/6a67a1ff-b670-83e8-9dd8-4c6b12160db3
-Last Synced: 2026-07-27T20:13:10.397Z
+Last Synced: 2026-07-27T20:52:38.401Z
 
 ---
 
@@ -7249,7 +7249,7 @@ I want to build an **Operating System for AI Media Production**.
 
  Knowledge Manager
 
- ─────────────────────────────────────────────────────────────
+ ─��───────────────────────────────────────────────────────────
 
                     STORY WORKSPACE
 
@@ -12918,91 +12918,91 @@ WRITE ON MINUTER VIDEO CYBER NEWS PROMPT ABOUT THIS WEEK CYBER NEWS TAKE NEWS FR
 
 ### Section 574 (Stream Index 5829)
 
-https://docs.github.com/en/enterprise-cloud@latest/admin/data-residency/about-github-enterprise-cloud-with-data-residency#api-access
+https://docs.github.com/en/enterprise-server@latest/rest/using-the-rest-api/getting-started-with-the-rest-api
 
 ---
 
 ### Section 575 (Stream Index 5830)
 
-https://www.openai.com
+https://www.apple.com/
 
 ---
 
 ### Section 576 (Stream Index 5831)
 
-https://github.com/openclaw/openclaw
+https://github.example.com/api/v3/repos/octo/repo
 
 ---
 
 ### Section 577 (Stream Index 5832)
 
-https://docs.github.com/en/enterprise-server@latest/rest/using-the-rest-api/getting-started-with-the-rest-api
+https://docs.github.com/en/rest/repos/contents?apiVersion=2022-11-28#delete-a-file
 
 ---
 
 ### Section 578 (Stream Index 5833)
 
-https://github.com/owner/repo/blob/branch/path/to/file.py
+https://docs.github.com/en/rest/repos/repos#get-a-repository
 
 ---
 
 ### Section 579 (Stream Index 5834)
 
-https://www.apple.com/
+https://github.com/openclaw/openclaw
 
 ---
 
 ### Section 580 (Stream Index 5835)
 
-https://docs.github.com/en/rest/repos/contents?apiVersion=2022-11-28#delete-a-file
+https://github.com/openai/openai/pulls/123
 
 ---
 
 ### Section 581 (Stream Index 5836)
 
-https://github.com/openai/openai/pulls/123
+https://www.statefarm.com
 
 ---
 
 ### Section 582 (Stream Index 5837)
 
-https://docs.github.com/en/rest/repos/contents?apiVersion=2022-11-28#create-or-update-file-contents
+https://www.progressive.com
 
 ---
 
 ### Section 583 (Stream Index 5838)
 
-https://github.example.com/api/v3/repos/octo/repo
+https://docs.github.com/en/rest/repos/contents?apiVersion=2022-11-28#create-or-update-file-contents
 
 ---
 
 ### Section 584 (Stream Index 5839)
 
-https://www.statefarm.com
+https://www.openai.com
 
 ---
 
 ### Section 585 (Stream Index 5840)
 
-https://docs.github.com/en/rest/repos/repos#get-a-repository
+https://docs.google.com/document/d/
 
 ---
 
 ### Section 586 (Stream Index 5841)
 
-https://docs.google.com/document/d/
+https://docs.github.com/en/enterprise-cloud@latest/admin/data-residency/about-github-enterprise-cloud-with-data-residency#api-access
 
 ---
 
 ### Section 587 (Stream Index 5842)
 
-https://api.github.com/repos/openai/openai
+https://github.com/owner/repo/blob/branch/path/to/file.py
 
 ---
 
 ### Section 588 (Stream Index 5843)
 
-https://www.progressive.com
+https://api.github.com/repos/openai/openai
 
 ---
 
