@@ -41,14 +41,14 @@ You can run the NCAS Interactive Studio Command Center locally using Node.js sta
 
 ### Using Node.js:
 ```bash
-npx serve src
+npx serve src -l 786
 ```
 
 ### Using Python:
 ```bash
-python -m http.server --directory src 8080
+python -m http.server --directory src 786
 ```
-Then open `http://localhost:8080` in your browser.
+Then open `http://localhost:786` in your browser.
 
 ---
 
