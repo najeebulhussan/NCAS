@@ -1,0 +1,54 @@
+{
+  "project": "NajeebCyber AI Studio (NCAS)",
+  "topic": "Global Cyber Attack Surge",
+  "handle": "@NajeebCyber",
+  "output_resolution": "1080x1920 (9:16 Vertical Short)",
+  "frame_rate": 30,
+  "video_codec": "H.264 / libx264 (CRF 18)",
+  "audio_codec": "AAC 192kbps (Mixed Voiceover + Music)",
+  "input_clips": [
+    {
+      "scene_num": 1,
+      "clip_filename": "scene_1.mp4",
+      "duration": "10.0s",
+      "scene_title": "CLIP 1: INTRO & HOOK"
+    },
+    {
+      "scene_num": 2,
+      "clip_filename": "scene_2.mp4",
+      "duration": "10.0s",
+      "scene_title": "CLIP 2: STORY 1A - BREAKING THREAT"
+    },
+    {
+      "scene_num": 3,
+      "clip_filename": "scene_3.mp4",
+      "duration": "10.0s",
+      "scene_title": "CLIP 3: STORY 1B - ATTACK VECTOR"
+    },
+    {
+      "scene_num": 4,
+      "clip_filename": "scene_4.mp4",
+      "duration": "10.0s",
+      "scene_title": "CLIP 4: STORY 2 - AI THREAT & ZERO-DAY"
+    },
+    {
+      "scene_num": 5,
+      "clip_filename": "scene_5.mp4",
+      "duration": "10.0s",
+      "scene_title": "CLIP 5: STORY 3 - MITIGATION ADVISORY"
+    },
+    {
+      "scene_num": 6,
+      "clip_filename": "scene_6.mp4",
+      "duration": "10.0s",
+      "scene_title": "CLIP 6: OUTRO & CALL TO ACTION"
+    }
+  ],
+  "ffmpeg_command": "ffmpeg -f concat -safe 0 -i \"E:\\NCAS\\output\\renders\\global_cyber_attack_surge_concat_list.txt\" -i voiceover.mp3 -i background_music.mp3 -filter_complex \"[0:v]subtitles='E:/NCAS/output/subtitles/global_cyber_attack_surge_en.srt':force_style='Fontname=Inter,Fontsize=22,PrimaryColour=&H0000F0FF,OutlineColour=&H00040814,BorderStyle=3'[v];[1:a][2:a]amix=inputs=2:weights=1 0.25[a]\" -map \"[v]\" -map \"[a]\" -c:v libx264 -preset fast -crf 18 -c:a aac -b:a 192k -r 30 -s 1080x1920 \"E:\\NCAS\\output\\renders\\global_cyber_attack_surge_final_60s.mp4\"",
+  "generated_files": {
+    "concat_list": "E:\\NCAS\\output\\renders\\global_cyber_attack_surge_concat_list.txt",
+    "windows_bat": "E:\\NCAS\\output\\renders\\global_cyber_attack_surge_render_command.bat",
+    "bash_sh": "E:\\NCAS\\output\\renders\\global_cyber_attack_surge_render_command.sh",
+    "target_mp4": "E:\\NCAS\\output\\renders\\global_cyber_attack_surge_final_60s.mp4"
+  }
+}

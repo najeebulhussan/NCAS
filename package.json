@@ -11,7 +11,8 @@
     "build-broadcast": "node scripts/render_pipeline.js",
     "translate": "node scripts/translate_script.js",
     "export-subtitles": "node scripts/export_subtitles.js",
-    "generate-thumbnail": "node scripts/generate_thumbnail_spec.js"
+    "generate-thumbnail": "node scripts/generate_thumbnail_spec.js",
+    "composite-video": "node scripts/composite_video.js"
   },
   "keywords": [
     "cybersecurity",

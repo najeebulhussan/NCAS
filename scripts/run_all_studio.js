@@ -38,8 +38,11 @@ async function masterRun() {
   // Step 5: High-CTR Thumbnail & Cover Spec Generator
   runStep(5, "High-CTR Thumbnail & Cover Spec Generator", "node scripts/generate_thumbnail_spec.js --topic \"Live Cyber Threat Digest\"");
 
-  // Step 6: Git Sync & Status Report
-  runStep(6, "GitHub Sync & Repository Status Check", "git add . && git commit -m \"chore(studio): master end-to-end run complete\" && git push origin main");
+  // Step 6: FFmpeg Video Compositor & Render Spec
+  runStep(6, "FFmpeg Video Compositor (6x10s Video + Subtitles + Audio)", "node scripts/composite_video.js");
+
+  // Step 7: Git Sync & Status Report
+  runStep(7, "GitHub Sync & Repository Status Check", "git add . && git commit -m \"chore(studio): master end-to-end run complete\" && git push origin main");
 
   console.log(`\n=============================================================`);
   console.log(` 🏆 NCAS MASTER FULL STUDIO RUN COMPLETED!`);
