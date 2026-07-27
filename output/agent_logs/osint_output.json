@@ -1,6 +1,6 @@
 {
   "agent": "OSINT Intelligence Agent",
-  "analyzed_at": "2026-07-27T22:58:20.161Z",
+  "analyzed_at": "2026-07-27T23:03:37.630Z",
   "target_topic": "Cybersecurity Incident Involving Consumer Information",
   "threat_actor_group": "APT29 / Midnight Blizzard (Suspected)",
   "attack_vector": "Zero-Day Remote Code Execution via Unauthenticated API Endpoint",

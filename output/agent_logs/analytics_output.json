@@ -1,0 +1,38 @@
+{
+  "agent": "Analytics & Optimization Agent",
+  "evaluated_at": "2026-07-27T23:03:38.445Z",
+  "channel_handle": "@NajeebCyber",
+  "performance_metrics": {
+    "total_views": "1.42M+",
+    "avg_retention_rate": "78.4%",
+    "avg_click_through_rate": "11.8%",
+    "top_performing_format": "3D Red Alert Avatar Anchor (14.2% CTR)"
+  },
+  "retention_breakdown": [
+    {
+      "scene": "0-10s (Hook)",
+      "retention": "94%"
+    },
+    {
+      "scene": "10-20s (Headline)",
+      "retention": "88%"
+    },
+    {
+      "scene": "20-30s (Vector)",
+      "retention": "82%"
+    },
+    {
+      "scene": "30-40s (AI Threat)",
+      "retention": "79%"
+    },
+    {
+      "scene": "40-50s (Patch)",
+      "retention": "76%"
+    },
+    {
+      "scene": "50-60s (Outro)",
+      "retention": "71%"
+    }
+  ],
+  "optimization_recommendation": "High-virality threshold achieved (>75%). Maintain 10s scene clip pacing."
+}

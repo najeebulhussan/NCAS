@@ -1,0 +1,31 @@
+{
+  "agent": "Cross-Platform Social Publisher Agent",
+  "published_at": "2026-07-27T23:03:38.305Z",
+  "channel_handle": "@NajeebCyber",
+  "target_platforms": [
+    "YOUTUBE_SHORTS",
+    "TIKTOK",
+    "INSTAGRAM_REELS",
+    "LINKEDIN",
+    "X_TWITTER"
+  ],
+  "dispatch_packages": {
+    "youtube_shorts": {
+      "title": "Cybersecurity Incident Involving Consumer Information #Shorts",
+      "category_id": "28",
+      "privacy": "public"
+    },
+    "tiktok": {
+      "caption": "🚨 Urgent Security Bulletin regarding Cybersecurity Incident Involving Consumer Information. #CyberSecurity #TechTok #NajeebCyber"
+    },
+    "instagram_reels": {
+      "caption": "🚨 BREAKING CYBER ALERT: Cybersecurity Incident Involving Consumer Information. Follow @NajeebCyber for 24/7 security updates."
+    },
+    "linkedin": {
+      "headline": "Executive Security Briefing: Cybersecurity Incident Involving Consumer Information"
+    },
+    "x_twitter": {
+      "tweet": "🚨 URGENT: Cybersecurity Incident Involving Consumer Information. Immediate patching required. Details via @NajeebCyber."
+    }
+  }
+}
