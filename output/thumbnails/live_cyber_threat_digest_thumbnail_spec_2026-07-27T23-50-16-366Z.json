@@ -1,0 +1,38 @@
+{
+  "metadata": {
+    "project": "NajeebCyber AI Studio (NCAS)",
+    "handle": "@NajeebCyber",
+    "topic": "Live Cyber Threat Digest",
+    "aspectRatio": "9:16 (Shorts/Reels/TikTok Cover) & 16:9 (YouTube Video Thumbnail)",
+    "generatedAt": "2026-07-27T23:50:16.368Z"
+  },
+  "variants": [
+    {
+      "variantId": 1,
+      "styleName": "Red Alert Newsroom Anchor (Highest CTR)",
+      "overlayText": "LIVE CYBER THREAT DIGEST",
+      "badgeText": "BREAKING ALERT",
+      "colorPalette": "Cyber Navy (#0B132B), Neon Red (#FF0055), Electric Cyan (#00F0FF)",
+      "imagePromptMidjourney": "Photorealistic 3D AI news anchor in sleek navy tech suit standing in futuristic cyber studio, giant glowing red warning hologram overlay reading \"LIVE CYBER THREAT DI\", world attack map in background, cinematic studio lighting, volumetric light rays, 8k resolution, hyperrealistic --ar 9:16 --style raw --v 6.0",
+      "dallePrompt": "A high-impact vertical short cover for a cybersecurity broadcast titled \"Live Cyber Threat Digest\". Features a photorealistic male AI news anchor in a modern dark navy blazer with a glowing cyan cyber pin, pointing at a large 3D neon red warning emblem with glowing digital matrix code background. High contrast, sharp broadcast lighting, 9:16 aspect ratio."
+    },
+    {
+      "variantId": 2,
+      "styleName": "Holographic Globe Exploit Heatmap",
+      "overlayText": "GLOBAL CYBER THREAT",
+      "badgeText": "CRITICAL",
+      "colorPalette": "Electric Blue (#00F0FF), Crimson Red (#FF2A6D), Dark Onyx (#040814)",
+      "imagePromptMidjourney": "A futuristic 3D holographic digital globe exploding with red cyber attack laser lines and glowing cyan data streams, ultra-detailed 3D floating glass text reading \"LIVE CYBER THREAT DI\", dark reflective newsroom floor, sci-fi studio aesthetic, 8k resolution --ar 9:16 --v 6.0",
+      "dallePrompt": "A futuristic 9:16 vertical cover image showing a glowing blue 3D holographic globe with neon red laser vectors indicating a global cyber attack. Bold 3D metallic text reading \"Live Cyber Threat Digest\" floats in front with intense cyan glow and dark cyber grid background."
+    },
+    {
+      "variantId": 3,
+      "styleName": "3D Metallic Cyber Shield Breach",
+      "overlayText": "EXPLOIT DETECTED",
+      "badgeText": "URGENT PATCH",
+      "colorPalette": "Chrome Silver, Neon Red, Deep Cyber Navy",
+      "imagePromptMidjourney": "Cinematic 3D metallic cyber security shield cracking open with glowing red digital lightning, matrix code fragments floating in space, high action, volumetric fog, dramatic news broadcast lighting, 8k render --ar 9:16 --style raw --v 6.0",
+      "dallePrompt": "A high-action vertical 9:16 thumbnail featuring a glowing 3D chrome cyber defense shield cracked by red digital lightning, with bold glowing text reading \"Live Cyber Threat Digest\". Modern high-tech cyber intelligence aesthetic, sharp details."
+    }
+  ]
+}
