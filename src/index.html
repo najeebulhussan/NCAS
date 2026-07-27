@@ -277,9 +277,104 @@
     </section>
   </main>
 
+  <!-- GUI Modals Hub -->
+
+  <!-- Modal 1: Subtitle Exporter GUI -->
+  <div class="gui-modal-backdrop" id="modalSubtitles">
+    <div class="gui-modal-content glass-panel">
+      <div class="modal-header">
+        <h3><i class="fa-solid fa-closed-captioning"></i> Subtitle & Caption Exporter (GUI)</h3>
+        <button class="btn-close-modal" data-close="modalSubtitles"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-desc">Export high-precision broadcast captions in .SRT (SubRip) or .VTT (WebVTT) formats for English & Urdu.</p>
+        <div class="modal-sub-tabs">
+          <button class="sub-tab-btn active" id="btnSubTabEnSrt">🇬🇧 English .SRT</button>
+          <button class="sub-tab-btn" id="btnSubTabEnVtt">🇬🇧 English .VTT</button>
+          <button class="sub-tab-btn" id="btnSubTabUrSrt">🇵🇰 Urdu .SRT</button>
+          <button class="sub-tab-btn" id="btnSubTabUrVtt">🇵🇰 Urdu .VTT</button>
+        </div>
+        <textarea class="modal-code-box" id="subPreviewBox" readonly></textarea>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-sm btn-outline" id="btnCopySubModal"><i class="fa-solid fa-copy"></i> Copy Captions</button>
+        <button class="btn-sm btn-accent" id="btnDownloadSubModal"><i class="fa-solid fa-download"></i> Download Subtitle File</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: Thumbnail Generator GUI -->
+  <div class="gui-modal-backdrop" id="modalThumbnails">
+    <div class="gui-modal-content glass-panel modal-lg">
+      <div class="modal-header">
+        <h3><i class="fa-solid fa-image"></i> High-CTR Thumbnail & Cover Prompt Generator (GUI)</h3>
+        <button class="btn-close-modal" data-close="modalThumbnails"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-desc">3D Midjourney v6 & DALL-E 3 visual prompt variants optimized for 9:16 Shorts/Reels/TikTok covers.</p>
+        <div class="thumbnail-variants-grid" id="thumbVariantsGrid">
+          <!-- Dynamically populated thumbnail variants -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3: FFmpeg Video Compositor GUI -->
+  <div class="gui-modal-backdrop" id="modalCompositor">
+    <div class="gui-modal-content glass-panel modal-lg">
+      <div class="modal-header">
+        <h3><i class="fa-solid fa-clapperboard"></i> FFmpeg 6x10s Video Compositor & Audio Mixer (GUI)</h3>
+        <button class="btn-close-modal" data-close="modalCompositor"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="modal-body">
+        <div class="compositor-meta-bar">
+          <span><i class="fa-solid fa-film"></i> Resolution: <strong>1080x1920 (9:16 Vertical)</strong></span>
+          <span><i class="fa-solid fa-music"></i> Audio: <strong>Voiceover (1.0) + Music (0.25)</strong></span>
+          <span><i class="fa-solid fa-bolt"></i> Codec: <strong>H.264 / AAC 192k</strong></span>
+        </div>
+        <div class="compositor-clips-timeline" id="compositorTimeline">
+          <!-- Dynamically rendered scene clips timeline -->
+        </div>
+        <h4 class="section-subhead"><i class="fa-solid fa-terminal"></i> Generated Render Batch Command (.bat / .sh)</h4>
+        <textarea class="modal-code-box" id="ffmpegCmdBox" readonly></textarea>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-sm btn-outline" id="btnCopyFfmpegCmd"><i class="fa-solid fa-copy"></i> Copy Render Command</button>
+        <button class="btn-sm btn-accent" id="btnRunFfmpegGui"><i class="fa-solid fa-play"></i> Trigger Video Render</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4: Master 1-Click Pipeline GUI -->
+  <div class="gui-modal-backdrop" id="modalPipeline">
+    <div class="gui-modal-content glass-panel">
+      <div class="modal-header">
+        <h3><i class="fa-solid fa-rocket"></i> Master 1-Click Broadcast Studio Pipeline (GUI)</h3>
+        <button class="btn-close-modal" data-close="modalPipeline"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="modal-body">
+        <div class="pipeline-progress-container">
+          <div class="pipeline-progress-bar" id="pipelineProgressBar"></div>
+        </div>
+        <ul class="pipeline-steps-list" id="pipelineStepsList">
+          <li class="p-step" id="pStep1"><i class="fa-solid fa-circle-notch fa-spin"></i> Step 1: Sync Live ChatGPT Resources</li>
+          <li class="p-step" id="pStep2"><i class="fa-solid fa-clock"></i> Step 2: Scrape Threat Context & Generate Script</li>
+          <li class="p-step" id="pStep3"><i class="fa-solid fa-clock"></i> Step 3: Generate Urdu & English Teleprompter</li>
+          <li class="p-step" id="pStep4"><i class="fa-solid fa-clock"></i> Step 4: Export .SRT & .VTT Captions</li>
+          <li class="p-step" id="pStep5"><i class="fa-solid fa-clock"></i> Step 5: Build High-CTR Thumbnail Prompts</li>
+          <li class="p-step" id="pStep6"><i class="fa-solid fa-clock"></i> Step 6: Construct FFmpeg Render Spec</li>
+          <li class="p-step" id="pStep7"><i class="fa-solid fa-clock"></i> Step 7: Push Studio Production to GitHub</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-sm btn-accent" id="btnStartPipelineGui"><i class="fa-solid fa-play"></i> Start Full Master Run</button>
+      </div>
+    </div>
+  </div>
+
   <footer class="app-footer">
     <span>NajeebCyber AI Studio (NCAS) • Built for Autonomous AI Media Operations</span>
-    <span>Git Repository Ready • Workspace \`e:\\NCAS\`</span>
+    <span>Git Repository Ready • Workspace `e:\NCAS`</span>
   </footer>
 
   <script src="app.js"></script>

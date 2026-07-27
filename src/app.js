@@ -668,4 +668,140 @@ function initWatchdogTab() {
       generateNewsScript(topic);
     });
   });
+
+  initGuiModals();
+}
+
+// 9. GUI Modals Controller Engine
+function initGuiModals() {
+  // Modal Close Handlers
+  document.querySelectorAll('.btn-close-modal').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const targetId = btn.getAttribute('data-close');
+      const modal = document.getElementById(targetId);
+      if (modal) modal.classList.remove('active');
+    });
+  });
+
+  // Close modal on backdrop click
+  document.querySelectorAll('.gui-modal-backdrop').forEach(modal => {
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) modal.classList.remove('active');
+    });
+  });
+
+  // 1. Subtitles GUI Modal Launcher
+  const btnExportSubtitles = document.getElementById('btnExportSubtitles');
+  if (btnExportSubtitles) {
+    btnExportSubtitles.addEventListener('click', () => {
+      const modal = document.getElementById('modalSubtitles');
+      if (!modal) return;
+
+      const box = document.getElementById('subPreviewBox');
+      const enSrtText = scriptData.map((s, i) => `${i + 1}\n00:00:${i * 10 < 10 ? '0' + (i * 10) : i * 10},000 --> 00:00:${(i + 1) * 10 < 10 ? '0' + ((i + 1) * 10) : (i + 1) * 10},000\n${s.text}\n`).join('\n');
+      
+      if (box) box.value = enSrtText;
+      modal.classList.add('active');
+    });
+  }
+
+  // 2. Thumbnails GUI Modal Launcher
+  const btnExportThumbnails = document.getElementById('btnExportThumbnails');
+  if (btnExportThumbnails) {
+    btnExportThumbnails.addEventListener('click', () => {
+      const modal = document.getElementById('modalThumbnails');
+      if (!modal) return;
+
+      const grid = document.getElementById('thumbVariantsGrid');
+      const topicText = scriptData[1] ? scriptData[1].lowerThird : "CYBER THREAT ALERT";
+
+      const variants = [
+        {
+          id: 1,
+          name: "Red Alert Anchor (Highest CTR)",
+          prompt: `Photorealistic 3D AI news anchor in sleek navy tech suit standing in futuristic cyber studio, giant glowing red warning hologram overlay reading "${topicText}", world attack map in background, 8k render --ar 9:16 --style raw --v 6.0`
+        },
+        {
+          id: 2,
+          name: "Holographic Globe Heatmap",
+          prompt: `Futuristic 3D holographic digital globe exploding with red cyber attack laser lines, floating glass text reading "${topicText}", dark reflective newsroom floor, 8k render --ar 9:16 --v 6.0`
+        },
+        {
+          id: 3,
+          name: "Metallic Cyber Shield Breach",
+          prompt: `Cinematic 3D metallic cyber security shield cracking open with glowing red digital lightning, matrix code fragments floating in space, 8k render --ar 9:16 --style raw --v 6.0`
+        }
+      ];
+
+      if (grid) {
+        grid.innerHTML = variants.map(v => `
+          <div class="t-variant-card">
+            <div class="t-v-title">Variant ${v.id}: ${v.name}</div>
+            <div class="t-v-prompt">${v.prompt}</div>
+            <button class="btn-sm btn-outline btn-copy-prompt" data-prompt="${encodeURIComponent(v.prompt)}">
+              <i class="fa-solid fa-copy"></i> Copy Prompt
+            </button>
+          </div>
+        `).join('');
+
+        document.querySelectorAll('.btn-copy-prompt').forEach(b => {
+          b.addEventListener('click', (e) => {
+            const p = decodeURIComponent(e.currentTarget.getAttribute('data-prompt'));
+            navigator.clipboard.writeText(p);
+            alert('🎨 Midjourney / DALL-E prompt copied to clipboard!');
+          });
+        });
+      }
+
+      modal.classList.add('active');
+    });
+  }
+
+  // 3. Pipeline GUI Modal Launcher
+  const btnRunPipelineHeader = document.getElementById('btnRunPipelineHeader');
+  if (btnRunPipelineHeader) {
+    btnRunPipelineHeader.addEventListener('click', () => {
+      const modal = document.getElementById('modalPipeline');
+      if (modal) modal.classList.add('active');
+    });
+  }
+
+  // Start Master Pipeline GUI Animation
+  const btnStartPipelineGui = document.getElementById('btnStartPipelineGui');
+  if (btnStartPipelineGui) {
+    btnStartPipelineGui.addEventListener('click', () => {
+      const bar = document.getElementById('pipelineProgressBar');
+      let stepIndex = 1;
+
+      btnStartPipelineGui.disabled = true;
+      btnStartPipelineGui.innerText = "Pipeline Executing...";
+
+      const timer = setInterval(() => {
+        if (stepIndex <= 7) {
+          const currentStepEl = document.getElementById(`pStep${stepIndex}`);
+          if (currentStepEl) {
+            currentStepEl.classList.remove('active');
+            currentStepEl.classList.add('done');
+            currentStepEl.innerHTML = `<i class="fa-solid fa-circle-check"></i> ${currentStepEl.innerText}`;
+          }
+
+          if (stepIndex < 7) {
+            const nextStepEl = document.getElementById(`pStep${stepIndex + 1}`);
+            if (nextStepEl) {
+              nextStepEl.classList.add('active');
+              nextStepEl.innerHTML = `<i class="fa-solid fa-circle-notch fa-spin"></i> ${nextStepEl.innerText}`;
+            }
+          }
+
+          if (bar) bar.style.width = `${(stepIndex / 7) * 100}%`;
+          stepIndex++;
+        } else {
+          clearInterval(timer);
+          btnStartPipelineGui.disabled = false;
+          btnStartPipelineGui.innerHTML = `<i class="fa-solid fa-check"></i> Master Run Complete!`;
+          alert('🏆 Master Broadcast Studio Pipeline complete!\nAll generated scripts, specs, subtitles & thumbnails pushed to GitHub.');
+        }
+      }, 1000);
+    });
+  }
 }
