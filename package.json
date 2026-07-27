@@ -7,7 +7,8 @@
     "start": "serve src -l 786",
     "update-chat": "node scripts/fetch_chat_updates.js",
     "generate-script": "node scripts/generate_news_script.js",
-    "export-flow": "node scripts/export_flow_config.js"
+    "export-flow": "node scripts/export_flow_config.js",
+    "build-broadcast": "node scripts/render_pipeline.js"
   },
   "keywords": [
     "cybersecurity",
