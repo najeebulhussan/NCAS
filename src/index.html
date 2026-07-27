@@ -77,8 +77,11 @@
         <button class="tab-btn active" data-tab="tab-teleprompter">
           <i class="fa-solid fa-display"></i> 60s Teleprompter & Telecast
         </button>
+        <button class="tab-btn" data-tab="tab-live-news">
+          <i class="fa-solid fa-rss"></i> Live News Feed (API)
+        </button>
         <button class="tab-btn" data-tab="tab-prompts">
-          <i class="fa-solid fa-terminal"></i> Master Prompts Repository
+          <i class="fa-solid fa-terminal"></i> Master Prompts
         </button>
         <button class="tab-btn" data-tab="tab-formats">
           <i class="fa-solid fa-layer-group"></i> 20 Viral Formats
@@ -150,7 +153,24 @@
         </div>
       </div>
 
-      <!-- Tab 2: Master Prompts Repository -->
+      <!-- Tab 2: Live News Feed (API) -->
+      <div class="tab-content" id="tab-live-news">
+        <div class="live-news-panel glass-panel">
+          <div class="panel-header">
+            <div>
+              <h3><i class="fa-solid fa-rss"></i> Breaking Cybersecurity Feed (Hacker News & Security Radar)</h3>
+              <p class="panel-sub">Real-time threat discovery. Click "Generate Teleprompter Script" on any story to instantly update the studio broadcast.</p>
+            </div>
+            <button class="btn-sm btn-accent" id="btnRefreshFeed"><i class="fa-solid fa-arrows-rotate"></i> Refresh Feed</button>
+          </div>
+
+          <div class="news-feed-grid" id="liveNewsContainer">
+            <div class="loading-spinner"><i class="fa-solid fa-circle-notch fa-spin"></i> Fetching live cyber security stories...</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 3: Master Prompts Repository -->
       <div class="tab-content" id="tab-prompts">
         <div class="prompts-grid">
           <div class="prompt-card glass-panel">

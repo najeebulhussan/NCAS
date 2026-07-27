@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initAgents();
   initTabs();
   initTeleprompter();
+  initLiveNewsFeed();
   initPrompts();
   initFormats();
   initRadarCanvas();
@@ -322,4 +323,146 @@ function initRadarCanvas() {
   }
 
   draw();
+}
+
+// 7. Live Cyber News Feed API Integration (Hacker News Algolia API)
+function initLiveNewsFeed() {
+  const container = document.getElementById('liveNewsContainer');
+  const refreshBtn = document.getElementById('btnRefreshFeed');
+
+  if (refreshBtn) {
+    refreshBtn.addEventListener('click', fetchLiveCyberNews);
+  }
+
+  fetchLiveCyberNews();
+}
+
+async function fetchLiveCyberNews() {
+  const container = document.getElementById('liveNewsContainer');
+  if (!container) return;
+
+  container.innerHTML = `<div class="loading-spinner"><i class="fa-solid fa-circle-notch fa-spin"></i> Fetching live cybersecurity threat feed...</div>`;
+
+  try {
+    // Fetch live stories tagged with cybersecurity / security / breach / vulnerability
+    const queries = ['cybersecurity', 'ransomware', 'zero-day', 'vulnerability', 'phishing'];
+    const randomQuery = queries[Math.floor(Math.random() * queries.length)];
+    const res = await fetch(`https://hn.algolia.com/api/v1/search_by_date?query=${randomQuery}&tags=story&hitsPerPage=9`);
+    const data = await res.json();
+
+    if (!data.hits || data.hits.length === 0) {
+      container.innerHTML = `<div class="loading-spinner">No live stories found at this time. Click refresh to try again.</div>`;
+      return;
+    }
+
+    container.innerHTML = data.hits.map(item => {
+      const title = item.title || 'Cybersecurity Advisory';
+      const url = item.url || `https://news.ycombinator.com/item?id=${item.objectID}`;
+      const author = item.author || 'OSINT Feed';
+      const dateStr = new Date(item.created_at).toLocaleDateString();
+      const points = item.points || 0;
+
+      return `
+        <div class="news-card">
+          <div class="news-card-header">
+            <span class="news-tag"><i class="fa-solid fa-shield"></i> Live Threat</span>
+            <span class="news-date">${dateStr}</span>
+          </div>
+
+          <div class="news-card-title">
+            <a href="${url}" target="_blank" rel="noopener">${title}</a>
+          </div>
+
+          <div class="news-card-meta">
+            <span><i class="fa-solid fa-user-ninja"></i> ${author}</span>
+            <span><i class="fa-solid fa-fire"></i> ${points} Points</span>
+          </div>
+
+          <button class="btn-sm btn-accent btn-gen-script" data-title="${encodeURIComponent(title)}">
+            <i class="fa-solid fa-wand-magic-sparkles"></i> Generate Teleprompter Script
+          </button>
+        </div>
+      `;
+    }).join('');
+
+    // Attach click handlers to Generate Teleprompter Script buttons
+    document.querySelectorAll('.btn-gen-script').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const title = decodeURIComponent(e.currentTarget.getAttribute('data-title'));
+        generateScriptFromNews(title);
+      });
+    });
+
+  } catch (err) {
+    console.error('Fetch live news error:', err);
+    container.innerHTML = `<div class="loading-spinner" style="color: var(--alert-red);">Error loading live news feed. Please check connection.</div>`;
+  }
+}
+
+function generateScriptFromNews(storyTitle) {
+  // Format 60-second broadcast script centered around the selected live story
+  const newScript = [
+    {
+      time: "00:00 - 00:06",
+      label: "INTRO",
+      text: `Welcome to Weekly Cyber News. I'm @ME, bringing you an urgent breaking security update.`,
+      lowerThird: "BREAKING CYBER SECURITY BULLETIN",
+      notes: "Visual: Studio Reveal • Red alert lighting • Lower third active"
+    },
+    {
+      time: "00:06 - 00:25",
+      label: "MAIN STORY (BREAKING)",
+      text: `Breaking News: ${storyTitle}. Security teams and analysts worldwide are monitoring this development closely to mitigate potential attack vectors.`,
+      lowerThird: storyTitle.length > 40 ? storyTitle.slice(0, 38) + '...' : storyTitle,
+      notes: "Visual: Threat heatmap • B-roll attack visualization • Code breach animation"
+    },
+    {
+      time: "00:25 - 00:45",
+      label: "ANALYSIS & IMPACT",
+      text: `Initial indicators highlight potential zero-day or credential exploitation risks. Organizations are advised to audit access logs, enforce MFA, and apply vendor security patches immediately.`,
+      lowerThird: "IMPACT: Urgent Patch & Access Audit Recommended",
+      notes: "Visual: Firewall shield animation • SOC dashboard"
+    },
+    {
+      time: "00:45 - 01:00",
+      label: "OUTRO & ACTION",
+      text: `That's your live Cyber Security update. Stay informed, stay protected, and remember—cyber awareness is your strongest defense. Follow @NajeebCyber for more updates. I'm @ME, signing off.`,
+      lowerThird: "Follow @NajeebCyber for Live Cyber Intelligence",
+      notes: "Visual: Studio Outro • Holographic Globe • Social panel"
+    }
+  ];
+
+  // Update scriptData array
+  scriptData.length = 0;
+  newScript.forEach(s => scriptData.push(s));
+
+  // Update Teleprompter UI
+  const scriptContainer = document.getElementById('scriptSectionsContainer');
+  if (scriptContainer) {
+    scriptContainer.innerHTML = scriptData.map(s => `
+      <div class="script-block">
+        <div class="sb-header">
+          <span>${s.label}</span>
+          <span class="sb-time">${s.time}</span>
+        </div>
+        <div class="sb-body">"${s.text}"</div>
+        <div class="sb-notes"><i class="fa-solid fa-camera"></i> ${s.notes}</div>
+      </div>
+    `).join('');
+  }
+
+  // Switch tab to Teleprompter & reset timer
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+
+  const teleBtn = document.querySelector('[data-tab="tab-teleprompter"]');
+  const teleTab = document.getElementById('tab-teleprompter');
+
+  if (teleBtn && teleTab) {
+    teleBtn.classList.add('active');
+    teleTab.classList.add('active');
+  }
+
+  resetTp();
+  alert(`⚡ Script generated for: "${storyTitle}"!\nTeleprompter is ready.`);
 }
