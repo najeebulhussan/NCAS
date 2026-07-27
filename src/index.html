@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NajeebCyber AI Studio (NCAS) - Broadcast Command Center</title>
+  <meta name="description" content="AI-Powered Cybersecurity News Studio & Master Broadcast Generator by NajeebCyber.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;600;700;800&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="cyber-grid-bg"></div>
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+
+  <!-- Header / Navigation -->
+  <header class="app-header">
+    <div class="brand-logo">
+      <div class="logo-icon"><i class="fa-solid fa-shield-halved"></i></div>
+      <div class="logo-text">
+        <span class="brand-title">NAJEEBCYBER <span class="badge-studio">AI STUDIO</span></span>
+        <span class="brand-subtitle">Broadcast Command & Production Engine v1.0</span>
+      </div>
+    </div>
+
+    <div class="header-status">
+      <div class="status-indicator">
+        <span class="pulse-dot"></span>
+        <span class="status-text">AI NEWSROOM LIVE</span>
+      </div>
+      <div class="social-handle-badge">
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-tiktok"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <span>@NajeebCyber</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Layout -->
+  <main class="dashboard-grid">
+    <!-- Sidebar: 12 AI Agents Monitor -->
+    <aside class="sidebar-card glass-panel">
+      <div class="panel-header">
+        <h3><i class="fa-solid fa-network-wired"></i> Agent Swarm (12)</h3>
+        <span class="chip-count">Active</span>
+      </div>
+
+      <div class="agent-list" id="agentList">
+        <!-- Dynamically rendered agents -->
+      </div>
+
+      <div class="system-stats">
+        <div class="stat-box">
+          <span class="stat-num">99.8%</span>
+          <span class="stat-lbl">Accuracy</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-num">&lt; 15m</span>
+          <span class="stat-lbl">Render Speed</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Center: Main Broadcast Production Studio -->
+    <section class="main-stage">
+      <!-- Studio Controls Bar -->
+      <div class="tabs-bar">
+        <button class="tab-btn active" data-tab="tab-teleprompter">
+          <i class="fa-solid fa-display"></i> 60s Teleprompter & Telecast
+        </button>
+        <button class="tab-btn" data-tab="tab-prompts">
+          <i class="fa-solid fa-terminal"></i> Master Prompts Repository
+        </button>
+        <button class="tab-btn" data-tab="tab-formats">
+          <i class="fa-solid fa-layer-group"></i> 20 Viral Formats
+        </button>
+        <button class="tab-btn" data-tab="tab-threatmap">
+          <i class="fa-solid fa-globe"></i> SOC Threat Radar
+        </button>
+      </div>
+
+      <!-- Tab 1: Teleprompter & Telecast Preview -->
+      <div class="tab-content active" id="tab-teleprompter">
+        <div class="studio-workspace">
+          <!-- Video Preview Mockup (9:16) -->
+          <div class="mobile-frame-container">
+            <div class="mobile-frame glass-panel">
+              <div class="frame-screen">
+                <div class="video-overlay-header">
+                  <span class="rec-badge"><i class="fa-solid fa-circle"></i> REC 00:60</span>
+                  <span class="live-ticker-head">WEEKLY CYBER NEWS</span>
+                </div>
+
+                <!-- Animated Studio Visual -->
+                <div class="virtual-studio">
+                  <div class="studio-grid"></div>
+                  <div class="hologram-globe"></div>
+                  <div class="avatar-portrait">
+                    <i class="fa-solid fa-robot avatar-icon"></i>
+                    <div class="anchor-tag">@ME (AI Anchor)</div>
+                  </div>
+                  <div class="lower-third" id="previewLowerThird">
+                    <div class="lt-title">WEEKLY CYBER NEWS BULLETIN</div>
+                    <div class="lt-sub">Live Broadcast • @NajeebCyber</div>
+                  </div>
+                </div>
+
+                <!-- Teleprompter Script Overlay -->
+                <div class="teleprompter-overlay">
+                  <div class="tp-scroll" id="tpText">
+                    [00:00 - 00:06] "Welcome to Weekly Cyber News. I'm @ME, bringing you this week's biggest cybersecurity stories from around the world..."
+                  </div>
+                </div>
+              </div>
+
+              <div class="player-controls">
+                <button id="btnPlayTp" class="btn-icon"><i class="fa-solid fa-play"></i></button>
+                <button id="btnPauseTp" class="btn-icon"><i class="fa-solid fa-pause"></i></button>
+                <button id="btnResetTp" class="btn-icon"><i class="fa-solid fa-rotate-left"></i></button>
+                <div class="progress-bar-container">
+                  <div class="progress-fill" id="tpProgress"></div>
+                </div>
+                <span class="timer-display" id="tpTimer">00:00 / 00:60</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Script Editor / Viewer -->
+          <div class="script-editor-card glass-panel">
+            <div class="panel-header">
+              <h3><i class="fa-solid fa-scroll"></i> Active Broadcast Script (60s)</h3>
+              <div class="header-actions">
+                <button class="btn-sm btn-accent" id="btnCopyScript"><i class="fa-solid fa-copy"></i> Copy Script</button>
+              </div>
+            </div>
+
+            <div class="script-sections" id="scriptSectionsContainer">
+              <!-- Rendered script blocks -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 2: Master Prompts Repository -->
+      <div class="tab-content" id="tab-prompts">
+        <div class="prompts-grid">
+          <div class="prompt-card glass-panel">
+            <div class="prompt-header">
+              <div>
+                <h4>Master OmniFlash Agent Prompt (v2.0)</h4>
+                <span class="badge-tag">Production Ready • Google Flow</span>
+              </div>
+              <button class="btn-sm btn-outline" id="btnCopyOmni"><i class="fa-solid fa-copy"></i> Copy Prompt</button>
+            </div>
+            <pre class="code-block" id="codeOmni"></pre>
+          </div>
+
+          <div class="prompt-card glass-panel">
+            <div class="prompt-header">
+              <div>
+                <h4>1-Minute Weekly Cyber News Master Prompt</h4>
+                <span class="badge-tag">AI Avatar Anchor Template</span>
+              </div>
+              <button class="btn-sm btn-outline" id="btnCopyAvatar"><i class="fa-solid fa-copy"></i> Copy Prompt</button>
+            </div>
+            <pre class="code-block" id="codeAvatar"></pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 3: 20 High-Growth Video Formats -->
+      <div class="tab-content" id="tab-formats">
+        <div class="formats-header glass-panel">
+          <h3><i class="fa-solid fa-fire"></i> 20 Proven Short-Form Cyber Formats</h3>
+          <p>Optimized for viral engagement across YouTube Shorts, TikTok, and Instagram Reels.</p>
+        </div>
+        <div class="formats-grid" id="formatsGrid"></div>
+      </div>
+
+      <!-- Tab 4: SOC Threat Radar -->
+      <div class="tab-content" id="tab-threatmap">
+        <div class="threat-radar-panel glass-panel">
+          <div class="panel-header">
+            <h3><i class="fa-solid fa-shield-virus"></i> Real-Time Global Threat Intelligence Radar</h3>
+            <span class="radar-live-tag"><i class="fa-solid fa-satellite-dish"></i> LIVE SIMULATION</span>
+          </div>
+
+          <div class="radar-canvas-container">
+            <canvas id="radarCanvas"></canvas>
+            <div class="radar-overlay-info">
+              <div class="threat-log-box">
+                <div class="log-head">ACTIVE DISCOVERED THREATS</div>
+                <ul class="log-list" id="radarLogList"></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    <span>NajeebCyber AI Studio (NCAS) • Built for Autonomous AI Media Operations</span>
+    <span>Git Repository Ready • Workspace \`e:\\NCAS\`</span>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
