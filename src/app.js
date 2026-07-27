@@ -240,6 +240,11 @@ function updateTpUI() {
 
   document.getElementById('tpText').innerText = `[${currentSegment.time}] ${currentSegment.text}`;
   document.getElementById('previewLowerThird').querySelector('.lt-title').innerText = currentSegment.lowerThird;
+  
+  const subBox = document.getElementById('hardburnSubtitleBox');
+  if (subBox) {
+    subBox.innerText = `"${currentSegment.text}"`;
+  }
 }
 
 // 4. Master Prompts Code Blocks
