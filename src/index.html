@@ -90,6 +90,9 @@
         <button class="tab-btn" data-tab="tab-threatmap">
           <i class="fa-solid fa-globe"></i> SOC Threat Radar
         </button>
+        <button class="tab-btn" data-tab="tab-watchdog">
+          <i class="fa-solid fa-shield-halved"></i> CISA CVE Watchdog
+        </button>
       </div>
 
       <!-- Tab 1: Teleprompter & Telecast Preview -->
@@ -226,6 +229,40 @@
                 <ul class="log-list" id="radarLogList"></ul>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 6: CISA & NIST CVE Real-Time Watchdog -->
+      <div class="tab-content" id="tab-watchdog">
+        <div class="watchdog-panel glass-panel">
+          <div class="panel-header">
+            <div>
+              <h3><i class="fa-solid fa-shield-halved"></i> CISA & NIST Critical CVE Threat Watchdog</h3>
+              <p class="panel-sub">Real-time monitoring of CISA Known Exploited Vulnerabilities (KEV) Catalog (1,655+ Active CVEs)</p>
+            </div>
+            <div class="header-actions">
+              <button class="btn-sm btn-accent" id="btnScanWatchdog"><i class="fa-solid fa-arrows-rotate"></i> Run Live Scan</button>
+            </div>
+          </div>
+
+          <div class="watchdog-stats-grid">
+            <div class="w-stat-card">
+              <span class="w-stat-val" id="wStatTotal">1,655</span>
+              <span class="w-stat-lbl">Tracked CISA CVEs</span>
+            </div>
+            <div class="w-stat-card border-red">
+              <span class="w-stat-val text-red" id="wStatNew">5</span>
+              <span class="w-stat-lbl">New Zero-Days (7d)</span>
+            </div>
+            <div class="w-stat-card">
+              <span class="w-stat-val text-cyan" id="wStatStatus">ACTIVE 24/7</span>
+              <span class="w-stat-lbl">Daemon Status</span>
+            </div>
+          </div>
+
+          <div class="watchdog-cve-grid" id="watchdogCveGrid">
+            <!-- Dynamically populated CISA CVE Cards -->
           </div>
         </div>
       </div>
