@@ -62,22 +62,46 @@ flowchart TD
 
 ---
 
-## 🔮 Future Expansion Roadmap (Phases 6 - 8)
+### ✅ Phase 6: Multi-Voice AI Voiceover & Audio Engine
+- [x] Built `scripts/generate_voiceover.js` for English & Urdu TTS voice specs and Web Speech API JS code (`npm run generate-voiceover`).
 
-### 📌 Phase 6: Multi-Cloud TTS & Native Video Compositing (Q3 2026)
-- [ ] **ElevenLabs & OpenAI Audio API Direct Integration**: Direct MP3 audio file generation for voiceovers.
-- [ ] **Background Ambient Music Library**: Pre-cleared 60s cyber synthwave music tracks integrated into compositing pipeline.
-- [ ] **Automated FFmpeg Binary Installer (`scripts/install_ffmpeg.js`)**: Auto-detects and installs portable FFmpeg binary if missing in system PATH.
+### ✅ Phase 7: Multi-Platform Social API Auto-Publisher
+- [x] Built `scripts/publish_social.js` for YouTube Shorts, TikTok, Instagram Reels, LinkedIn & X dispatch packages (`npm run publish-social`).
 
-### 📌 Phase 7: 1-Click Multi-Platform Social Publisher (Q4 2026)
-- [ ] **YouTube Data API v3 Upload Engine**: 1-click scheduling to YouTube Shorts under `@NajeebCyber`.
-- [ ] **TikTok Content Posting API Engine**: Direct video posting to TikTok account.
-- [ ] **Instagram Graph API Engine**: Direct posting to Instagram Reels.
-- [ ] **X & LinkedIn API Publisher**: Automated text + video posting for professional audiences.
+### ✅ Phase 8: 24/7 Autonomous Newsroom Loop & Audience Retention Analytics
+- [x] Built `scripts/daemon_loop.js` for continuous hourly newsroom execution (`npm run daemon`).
+- [x] Added Tab 7 (`tab-analytics`) with live 60s retention curve charts & multi-platform CTR breakdown.
 
-### 📌 Phase 8: 24/7 Autonomous Newsroom Loop & Retention Analytics (Q1 2027)
-- [ ] **24/7 Cron Daemon (`scripts/daemon_loop.js`)**: Fully autonomous hourly execution of threat scraping, script generation, rendering, and posting.
-- [ ] **Retention Analytics Dashboard**: Tracks view counts, watch time, and engagement metrics inside Web Studio UI.
+### ✅ Phase 9: Setup Utilities, AI Avatar Blueprints & PDF Reports
+- [x] Built `scripts/setup_ffmpeg_env.js` for portable FFmpeg binary setup (`npm run setup-ffmpeg`).
+- [x] Built `scripts/export_avatar_spec.js` for AI Avatar `@ME` visual prompts & character sheets (`npm run export-avatar`).
+- [x] Built `scripts/export_pdf_report.js` for printable HTML/PDF executive spec reports (`npm run export-pdf`).
+
+---
+
+## 🔮 Next Future Roadmap: Autonomous AI Agent Swarm (Phase 10 & Phase 11)
+
+### 📌 Phase 10: Multi-Agent Swarm Orchestration Engine (Q3 2026)
+Developing 7 dedicated autonomous AI agents based on [docs/architecture.md](file:///e:/NCAS/docs/architecture.md):
+
+1. **🕵️ Threat Scraper Agent (`agents/scraper_agent.js`)**:
+   - Continuously monitors CISA KEV catalog, NIST NVD, and Hacker News API for zero-days and emerging exploits.
+2. **✍️ Script Copywriter Agent (`agents/writer_agent.js`)**:
+   - Transforms raw threat payloads into high-retention 60s vertical video scripts tailored to custom clip time slots.
+3. **🌐 Bilingual Translator Agent (`agents/translator_agent.js`)**:
+   - Translates scripts side-by-side into Urdu (`اردو`) & English teleprompter text.
+4. **🎙️ Voiceover Audio Agent (`agents/audio_agent.js`)**:
+   - Synthesizes neural audio voiceovers via ElevenLabs / OpenAI Audio APIs.
+5. **🎨 Thumbnail & Avatar Agent (`agents/visual_agent.js`)**:
+   - Generates 3D Midjourney v6 / DALL-E 3 visual prompt blueprints and character sheets.
+6. **🎬 Video Renderer Agent (`agents/renderer_agent.js`)**:
+   - Executes native FFmpeg video compositing, scene concatenation, and subtitle hardburning.
+7. **📡 Social Publisher Agent (`agents/publisher_agent.js`)**:
+   - Dispatches completed video packages to YouTube Shorts, TikTok, Instagram Reels, LinkedIn & X.
+
+### 📌 Phase 11: Real-Time Agent Communication Bus & Live Swarm GUI (Q4 2026)
+- [ ] Connect agents via Event-Driven IPC Message Bus.
+- [ ] Connect Swarm Status Cards in Web Command Center Tab 1 to live agent pulse APIs.
 
 ---
 
