@@ -82,6 +82,32 @@ const server = http.createServer(async (req, res) => {
     return;
   }
 
+  // 2.5 Research Desk & Claim-Evidence Matrix (Research Agent Trigger)
+  if (req.method === 'POST' && pathname === '/api/research/claim-matrix') {
+    let bodyData = '';
+    req.on('data', chunk => bodyData += chunk);
+    req.on('end', async () => {
+      try {
+        const payload = JSON.parse(bodyData || '{}');
+        const ResearchDeskAgent = require('../../packages/agents/research_desk_agent');
+        const researchAgent = new ResearchDeskAgent();
+
+        const agentReport = await researchAgent.run(payload);
+
+        res.writeHead(200);
+        res.end(JSON.stringify({
+          success: true,
+          message: `Claim-Evidence Verification Matrix Generated!`,
+          agentReport: agentReport
+        }));
+      } catch (err) {
+        res.writeHead(400);
+        res.end(JSON.stringify({ success: false, error: err.message }));
+      }
+    });
+    return;
+  }
+
   // 3. List Content Jobs
   if (req.method === 'GET' && pathname === '/api/jobs') {
     const jobsList = Array.from(activeJobs.values()).map(j => j.getJobSummary());
