@@ -14,7 +14,8 @@
     "generate-thumbnail": "node scripts/generate_thumbnail_spec.js",
     "composite-video": "node scripts/composite_video.js",
     "watchdog": "node scripts/cisa_watchdog.js",
-    "generate-voiceover": "node scripts/generate_voiceover.js"
+    "generate-voiceover": "node scripts/generate_voiceover.js",
+    "publish-social": "node scripts/publish_social.js"
   },
   "keywords": [
     "cybersecurity",

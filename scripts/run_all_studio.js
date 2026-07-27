@@ -44,8 +44,11 @@ async function masterRun() {
   // Step 7: FFmpeg Video Compositor & Render Spec
   runStep(7, "FFmpeg Video Compositor (6x10s Video + Subtitles + Audio)", "node scripts/composite_video.js");
 
-  // Step 8: Git Sync & Status Report
-  runStep(8, "GitHub Sync & Repository Status Check", "git add . && git commit -m \"chore(studio): master end-to-end run complete\" && git push origin main");
+  // Step 8: Multi-Platform Social Auto-Publishing Engine (@NajeebCyber)
+  runStep(8, "Multi-Platform Social Auto-Publishing Engine", "node scripts/publish_social.js");
+
+  // Step 9: Git Sync & Status Report
+  runStep(9, "GitHub Sync & Repository Status Check", "git add . && git commit -m \"chore(studio): master end-to-end run complete\" && git push origin main");
 
   console.log(`\n=============================================================`);
   console.log(` 🏆 NCAS MASTER FULL STUDIO RUN COMPLETED!`);
