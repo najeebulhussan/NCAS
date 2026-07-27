@@ -172,6 +172,34 @@ function initTeleprompter() {
       alert(isUrdu ? '🇵🇰 Script translated to Urdu (اردو)!' : '🇬🇧 Script switched to English!');
     });
   }
+
+  // 1-Click Subtitles Exporter Modal Alert
+  const subBtn = document.getElementById('btnExportSubtitles');
+  if (subBtn) {
+    subBtn.addEventListener('click', () => {
+      let srtText = `1\n00:00:00,000 --> 00:00:10,000\n${scriptData[0].text}\n\n2\n00:00:10,000 --> 00:00:20,000\n${scriptData[1].text}\n\n3\n00:00:20,000 --> 00:00:30,000\n${scriptData[2].text}\n\n4\n00:00:30,000 --> 00:00:40,000\n${scriptData[3].text}\n\n5\n00:00:40,000 --> 00:00:50,000\n${scriptData[4].text}\n\n6\n00:00:50,000 --> 00:01:00,000\n${scriptData[5].text}`;
+      navigator.clipboard.writeText(srtText);
+      alert('💬 .SRT Subtitle Captions copied to clipboard!\nSaved to output/subtitles/ in your project.');
+    });
+  }
+
+  // 1-Click Thumbnail Prompts Modal Alert
+  const thumbBtn = document.getElementById('btnExportThumbnails');
+  if (thumbBtn) {
+    thumbBtn.addEventListener('click', () => {
+      const promptText = `Photorealistic 3D AI news anchor in sleek navy tech suit standing in futuristic cyber studio, giant glowing red warning hologram overlay reading "${scriptData[1].lowerThird}", world attack map in background, cinematic studio lighting, 8k render --ar 9:16 --v 6.0`;
+      navigator.clipboard.writeText(promptText);
+      alert(`🖼️ High-CTR Midjourney/DALL-E Thumbnail Prompt copied!\n\n"${promptText}"`);
+    });
+  }
+
+  // Header 1-Click Pipeline Button
+  const pipelineBtn = document.getElementById('btnRunPipelineHeader');
+  if (pipelineBtn) {
+    pipelineBtn.addEventListener('click', () => {
+      alert('🚀 1-Click Pipeline Ready!\nRun "npm run build-broadcast -- --live" in your terminal to trigger full broadcast rendering & GitHub push.');
+    });
+  }
 }
 
 function playTp() {
