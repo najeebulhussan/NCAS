@@ -9,7 +9,8 @@
     "generate-script": "node scripts/generate_news_script.js",
     "export-flow": "node scripts/export_flow_config.js",
     "build-broadcast": "node scripts/render_pipeline.js",
-    "translate": "node scripts/translate_script.js"
+    "translate": "node scripts/translate_script.js",
+    "export-subtitles": "node scripts/export_subtitles.js"
   },
   "keywords": [
     "cybersecurity",

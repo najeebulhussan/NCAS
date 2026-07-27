@@ -1,0 +1,24 @@
+1
+00:00:00,000 --> 00:00:10,000
+Welcome to Weekly Cyber News. I'm @ME, bringing you an urgent security bulletin regarding Global Cyber Attack Surge.
+
+2
+00:00:10,000 --> 00:00:20,000
+First up: Security researchers report a significant advisory regarding Global Cyber Attack Surge, urging immediate mitig. Security teams and analysts worldwide are monitoring this development.
+
+3
+00:00:20,000 --> 00:00:30,000
+Initial reports indicate potential zero-day or credential exploitation risks allowing unauthorized lateral movement across endpoints.
+
+4
+00:00:30,000 --> 00:00:40,000
+Additionally, AI-assisted scanning scripts are accelerating exploitation windows, making automated patch management essential.
+
+5
+00:00:40,000 --> 00:00:50,000
+Organizations are urged to audit access logs, enforce strict multi-factor authentication, and apply vendor security patches immediately.
+
+6
+00:00:50,000 --> 00:01:00,000
+Stay informed, stay protected, and remember—cyber awareness is your strongest defense. Follow @NajeebCyber for more updates. I'm @ME, see you next week.
+
