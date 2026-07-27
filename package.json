@@ -20,7 +20,8 @@
     "setup-ffmpeg": "node scripts/setup_ffmpeg_env.js",
     "export-avatar": "node scripts/export_avatar_spec.js",
     "export-pdf": "node scripts/export_pdf_report.js",
-    "run-agents": "node agents/run_all_agents.js"
+    "run-agents": "node agents/run_all_agents.js",
+    "image-director": "node scripts/image_director.js"
   },
   "keywords": [
     "cybersecurity",

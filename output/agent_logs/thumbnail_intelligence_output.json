@@ -1,0 +1,22 @@
+{
+  "agent": "Thumbnail Intelligence Agent",
+  "generated_at": "2026-07-27T23:26:47.355Z",
+  "channel_handle": "@NajeebCyber",
+  "target_topic": "Cybersecurity Incident Involving Consumer Information",
+  "concepts": [
+    {
+      "concept_id": "A_RED_ALERT_AVATAR",
+      "headline_text": "ZERO-DAY ATTACK SURGE!",
+      "ctr_optimization_notes": "High-contrast red warning hologram with @ME anchor in focus. Target CTR: >14%",
+      "midjourney_prompt": "Photorealistic 3D portrait of @ME AI news anchor in dark navy tech suit standing in futuristic cyber studio, giant glowing red warning hologram overlay reading \"ZERO-DAY ATTACK SURGE\", world attack map background, cinematic lighting, 8k render --ar 9:16 --v 6.0",
+      "dall_e_prompt": "A high-end 3D visual of a professional cyber analyst anchor named @ME in a futuristic newsroom. Headline: ZERO-DAY ATTACK SURGE! Vertical 9:16 portrait composition."
+    },
+    {
+      "concept_id": "B_HOLOGRAPHIC_GLOBE_HEATMAP",
+      "headline_text": "GLOBAL INFRASTRUCTURE BREACH",
+      "ctr_optimization_notes": "Wide shot of holographic global threat radar with red attack vectors. Target CTR: >12%",
+      "midjourney_prompt": "Wide angle shot of futuristic cyber SOC command center, giant 3D holographic globe with red threat attack streams connecting continents, @ME anchor analyzing digital telemetry screens --ar 9:16 --v 6.0",
+      "dall_e_prompt": "Futuristic SOC command room with 3D holographic earth threat heatmap and cyber security analyst @ME. High contrast cyan and red lighting."
+    }
+  ]
+}
