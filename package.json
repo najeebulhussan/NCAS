@@ -5,7 +5,8 @@
   "main": "src/app.js",
   "scripts": {
     "start": "serve src -l 786",
-    "update-chat": "node scripts/fetch_chat_updates.js"
+    "update-chat": "node scripts/fetch_chat_updates.js",
+    "generate-script": "node scripts/generate_news_script.js"
   },
   "keywords": [
     "cybersecurity",
