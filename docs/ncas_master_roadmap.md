@@ -79,29 +79,27 @@ flowchart TD
 
 ---
 
-## 🔮 Next Future Roadmap: Autonomous AI Agent Swarm (Phase 10 & Phase 11)
+## 🔮 Next Future Roadmap: Complete 12 AI Subagents Swarm (Phase 10 & Phase 11)
 
-### 📌 Phase 10: Multi-Agent Swarm Orchestration Engine (Q3 2026)
-Developing 7 dedicated autonomous AI agents based on [docs/architecture.md](file:///e:/NCAS/docs/architecture.md):
+### 📌 Phase 10: Complete 12 AI Subagents Swarm Engine (Q3 2026)
+Constructing all 12 specialized autonomous AI agents in `agents/` as specified in [docs/architecture.md](file:///e:/NCAS/docs/architecture.md):
 
-1. **🕵️ Threat Scraper Agent (`agents/scraper_agent.js`)**:
-   - Continuously monitors CISA KEV catalog, NIST NVD, and Hacker News API for zero-days and emerging exploits.
-2. **✍️ Script Copywriter Agent (`agents/writer_agent.js`)**:
-   - Transforms raw threat payloads into high-retention 60s vertical video scripts tailored to custom clip time slots.
-3. **🌐 Bilingual Translator Agent (`agents/translator_agent.js`)**:
-   - Translates scripts side-by-side into Urdu (`اردو`) & English teleprompter text.
-4. **🎙️ Voiceover Audio Agent (`agents/audio_agent.js`)**:
-   - Synthesizes neural audio voiceovers via ElevenLabs / OpenAI Audio APIs.
-5. **🎨 Thumbnail & Avatar Agent (`agents/visual_agent.js`)**:
-   - Generates 3D Midjourney v6 / DALL-E 3 visual prompt blueprints and character sheets.
-6. **🎬 Video Renderer Agent (`agents/renderer_agent.js`)**:
-   - Executes native FFmpeg video compositing, scene concatenation, and subtitle hardburning.
-7. **📡 Social Publisher Agent (`agents/publisher_agent.js`)**:
-   - Dispatches completed video packages to YouTube Shorts, TikTok, Instagram Reels, LinkedIn & X.
+1. **👑 Chief AI Agent (`agents/chief_agent.js`)**: Overall workflow coordinator, task dispatcher, and final quality control officer.
+2. **🔎 Trend Hunter Agent (`agents/trend_hunter_agent.js`)**: Real-time news discovery and virality predictor (Hacker News, CISA, X security feeds).
+3. **✅ Fact Checker & Source Verifier (`agents/fact_checker_agent.js`)**: Cross-references claims against CVE databases and NIST advisories.
+4. **🕵️ OSINT Intelligence Agent (`agents/osint_agent.js`)**: Technical deep-dive analyst extracting IOCs, attack vectors, and APT profiles.
+5. **✍️ Broadcast Scriptwriter (`agents/scriptwriter_agent.js`)**: Crafts 60s short-form scripts tailored to dynamic scene time slots.
+6. **🎨 Visual Director & Studio Designer (`agents/visual_director_agent.js`)**: Generates 3D Midjourney v6/DALL-E 3 visual prompt blueprints.
+7. **📺 Motion Graphics & Lower-Thirds Agent (`agents/motion_graphics_agent.js`)**: Formats onscreen breaking tickers, lower-thirds, and threat meters.
+8. **🎙️ Voice & Audio Director (`agents/voice_audio_agent.js`)**: Controls AI voiceover TTS modulation, pacing, and cyber sound FX.
+9. **🎬 Video Production & Render Agent (`agents/video_render_agent.js`)**: Executes native FFmpeg video compositing, clip concatenation, and hardburned subtitles.
+10. **📡 Cross-Platform Social Publisher (`agents/social_publisher_agent.js`)**: Dispatches platform-optimized upload packages to YouTube Shorts, TikTok, Instagram Reels, LinkedIn & X.
+11. **📈 Analytics & Optimization Agent (`agents/analytics_agent.js`)**: Measures retention curves, CTR, and provides feedback to Trend Hunter and Scriptwriter.
+12. **🛡️ Brand Guardian & Community Agent (`agents/brand_guardian_agent.js`)**: Maintains standard handle consistency (`@NajeebCyber`) and community engagement.
 
-### 📌 Phase 11: Real-Time Agent Communication Bus & Live Swarm GUI (Q4 2026)
-- [ ] Connect agents via Event-Driven IPC Message Bus.
-- [ ] Connect Swarm Status Cards in Web Command Center Tab 1 to live agent pulse APIs.
+### 📌 Phase 11: Real-Time Agent Communication Bus & Swarm Dashboard Sync (Q4 2026)
+- [ ] Connect all 12 agents via Event-Driven IPC Message Bus.
+- [ ] Wire the Live 12 AI Subagents Swarm Monitor in Web Command Center Tab 1 (`http://localhost:786`) to real-time agent status heartbeats.
 
 ---
 
