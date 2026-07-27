@@ -1,0 +1,50 @@
+{
+  "agent": "Visual Director & Studio Designer Agent",
+  "designed_at": "2026-07-27T22:58:20.732Z",
+  "anchor_id": "@ME",
+  "studio_environment": "Virtual Cyber Newsroom with 3D Holographic World Attack Heatmap",
+  "scene_visual_prompts": [
+    {
+      "clip_id": 1,
+      "duration": "10s",
+      "heading": "CRITICAL SECURITY BULLETIN",
+      "midjourney_v6_prompt": "Photorealistic 3D portrait of @ME AI news anchor in dark navy tech suit standing in futuristic cyber studio, giant glowing red warning hologram overlay reading \"CRITICAL SECURITY BULLETIN\", world attack map background, cinematic lighting, 8k render --ar 9:16 --v 6.0",
+      "dall_e_3_prompt": "A high-end 3D newsroom scene featuring AI anchor @ME with a glowing red cyber threat alert reading \"CRITICAL SECURITY BULLETIN\". 9:16 vertical orientation."
+    },
+    {
+      "clip_id": 2,
+      "duration": "10s",
+      "heading": "ZERO-DAY EXPLOIT DISCOVERED",
+      "midjourney_v6_prompt": "Photorealistic 3D portrait of @ME AI news anchor in dark navy tech suit standing in futuristic cyber studio, giant glowing red warning hologram overlay reading \"ZERO-DAY EXPLOIT DISCOVERED\", world attack map background, cinematic lighting, 8k render --ar 9:16 --v 6.0",
+      "dall_e_3_prompt": "A high-end 3D newsroom scene featuring AI anchor @ME with a glowing red cyber threat alert reading \"ZERO-DAY EXPLOIT DISCOVERED\". 9:16 vertical orientation."
+    },
+    {
+      "clip_id": 3,
+      "duration": "10s",
+      "heading": "ATTACK VECTOR TIMELINE",
+      "midjourney_v6_prompt": "Photorealistic 3D portrait of @ME AI news anchor in dark navy tech suit standing in futuristic cyber studio, giant glowing red warning hologram overlay reading \"ATTACK VECTOR TIMELINE\", world attack map background, cinematic lighting, 8k render --ar 9:16 --v 6.0",
+      "dall_e_3_prompt": "A high-end 3D newsroom scene featuring AI anchor @ME with a glowing red cyber threat alert reading \"ATTACK VECTOR TIMELINE\". 9:16 vertical orientation."
+    },
+    {
+      "clip_id": 4,
+      "duration": "10s",
+      "heading": "THREAT ACTOR PROFILE",
+      "midjourney_v6_prompt": "Photorealistic 3D portrait of @ME AI news anchor in dark navy tech suit standing in futuristic cyber studio, giant glowing red warning hologram overlay reading \"THREAT ACTOR PROFILE\", world attack map background, cinematic lighting, 8k render --ar 9:16 --v 6.0",
+      "dall_e_3_prompt": "A high-end 3D newsroom scene featuring AI anchor @ME with a glowing red cyber threat alert reading \"THREAT ACTOR PROFILE\". 9:16 vertical orientation."
+    },
+    {
+      "clip_id": 5,
+      "duration": "10s",
+      "heading": "IMMEDIATE PATCH ACTION",
+      "midjourney_v6_prompt": "Photorealistic 3D portrait of @ME AI news anchor in dark navy tech suit standing in futuristic cyber studio, giant glowing red warning hologram overlay reading \"IMMEDIATE PATCH ACTION\", world attack map background, cinematic lighting, 8k render --ar 9:16 --v 6.0",
+      "dall_e_3_prompt": "A high-end 3D newsroom scene featuring AI anchor @ME with a glowing red cyber threat alert reading \"IMMEDIATE PATCH ACTION\". 9:16 vertical orientation."
+    },
+    {
+      "clip_id": 6,
+      "duration": "10s",
+      "heading": "OUTRO & COMMUNITY CTA",
+      "midjourney_v6_prompt": "Photorealistic 3D portrait of @ME AI news anchor in dark navy tech suit standing in futuristic cyber studio, giant glowing red warning hologram overlay reading \"OUTRO & COMMUNITY CTA\", world attack map background, cinematic lighting, 8k render --ar 9:16 --v 6.0",
+      "dall_e_3_prompt": "A high-end 3D newsroom scene featuring AI anchor @ME with a glowing red cyber threat alert reading \"OUTRO & COMMUNITY CTA\". 9:16 vertical orientation."
+    }
+  ]
+}

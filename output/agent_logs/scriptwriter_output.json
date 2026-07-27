@@ -1,0 +1,51 @@
+{
+  "agent": "Broadcast Scriptwriter Agent",
+  "generated_at": "2026-07-27T22:58:20.285Z",
+  "master_prompt_version": "v2.1 OmniFlash",
+  "topic": "Cybersecurity Incident Involving Consumer Information",
+  "total_duration_sec": 60,
+  "clips": [
+    {
+      "clip_id": 1,
+      "duration_sec": 10,
+      "heading": "CRITICAL SECURITY BULLETIN",
+      "lowerThird": "BREAKING: URGENT CYBER SECURITY BULLETIN",
+      "text": "Welcome to Weekly Cyber News. I'm @ME, bringing you an urgent security bulletin on a breaking exploit."
+    },
+    {
+      "clip_id": 2,
+      "duration_sec": 10,
+      "heading": "ZERO-DAY EXPLOIT DISCOVERED",
+      "lowerThird": "THREAT: ZERO-DAY EXPLOIT ACTIVE",
+      "text": "Security researchers have identified an active zero-day attack targeting core infrastructure servers worldwide."
+    },
+    {
+      "clip_id": 3,
+      "duration_sec": 10,
+      "heading": "ATTACK VECTOR TIMELINE",
+      "lowerThird": "VECTOR: REMOTE CODE EXECUTION",
+      "text": "The exploit utilizes an unauthenticated API endpoint to execute remote code with elevated system privileges."
+    },
+    {
+      "clip_id": 4,
+      "duration_sec": 10,
+      "heading": "THREAT ACTOR PROFILE",
+      "lowerThird": "APT PROFILE: ADVANCED THREAT GROUP",
+      "text": "Cyber intelligence attributes this campaign to sophisticated state-sponsored threat actors using custom malware."
+    },
+    {
+      "clip_id": 5,
+      "duration_sec": 10,
+      "heading": "IMMEDIATE PATCH ACTION",
+      "lowerThird": "ACTION: APPLY EMERGENCY PATCH IMMEDIATELY",
+      "text": "CISA has issued an emergency directive ordering all organizations to apply security patches immediately."
+    },
+    {
+      "clip_id": 6,
+      "duration_sec": 10,
+      "heading": "OUTRO & COMMUNITY CTA",
+      "lowerThird": "FOLLOW @NAJEEBCYBER FOR REAL-TIME ALERTS",
+      "text": "Stay protected, patch your systems, and follow @NajeebCyber for continuous 24/7 zero-day alerts."
+    }
+  ]
+}

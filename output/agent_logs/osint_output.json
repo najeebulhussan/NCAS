@@ -1,0 +1,19 @@
+{
+  "agent": "OSINT Intelligence Agent",
+  "analyzed_at": "2026-07-27T22:58:20.161Z",
+  "target_topic": "Cybersecurity Incident Involving Consumer Information",
+  "threat_actor_group": "APT29 / Midnight Blizzard (Suspected)",
+  "attack_vector": "Zero-Day Remote Code Execution via Unauthenticated API Endpoint",
+  "indicators_of_compromise": {
+    "ip_addresses": [
+      "192.0.2.14",
+      "198.51.100.89"
+    ],
+    "domains": [
+      "update-auth-sec.com",
+      "telemetry-check.net"
+    ],
+    "malware_family": "ShadowBeacon v4.2"
+  },
+  "mitigation_priority": "HIGH_IMMEDIATE_PATCH"
+}
