@@ -130,6 +130,48 @@ function initTeleprompter() {
     navigator.clipboard.writeText(fullText);
     alert('Full script copied to clipboard!');
   });
+
+  const translateBtn = document.getElementById('btnTranslateScript');
+  if (translateBtn) {
+    let isUrdu = false;
+    translateBtn.addEventListener('click', async () => {
+      isUrdu = !isUrdu;
+      translateBtn.innerHTML = isUrdu ? `<i class="fa-solid fa-language"></i> English` : `<i class="fa-solid fa-language"></i> Urdu / English`;
+
+      for (let s of scriptData) {
+        if (isUrdu) {
+          if (!s.textUrdu) {
+            s.textEn = s.text;
+            s.lowerThirdEn = s.lowerThird;
+            // Translate to Urdu via free API
+            try {
+              const res = await fetch(`https://api.mymemory.translated.net/get?q=${encodeURIComponent(s.text)}&langpair=en|ur`);
+              const data = await res.json();
+              s.textUrdu = data.responseData ? data.responseData.translatedText : s.text;
+            } catch(e) { s.textUrdu = s.text; }
+          }
+          s.text = s.textUrdu;
+        } else {
+          if (s.textEn) s.text = s.textEn;
+        }
+      }
+
+      // Re-render Script blocks
+      scriptContainer.innerHTML = scriptData.map(s => `
+        <div class="script-block">
+          <div class="sb-header">
+            <span>${s.label}</span>
+            <span class="sb-time">${s.time}</span>
+          </div>
+          <div class="sb-body">"${s.text}"</div>
+          <div class="sb-notes"><i class="fa-solid fa-camera"></i> ${s.notes}</div>
+        </div>
+      `).join('');
+
+      updateTpUI();
+      alert(isUrdu ? '🇵🇰 Script translated to Urdu (اردو)!' : '🇬🇧 Script switched to English!');
+    });
+  }
 }
 
 function playTp() {
