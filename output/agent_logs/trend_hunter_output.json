@@ -1,0 +1,43 @@
+{
+  "agent": "Trend Hunter Agent",
+  "scraped_at": "2026-07-27T22:56:14.613Z",
+  "top_stories": [
+    {
+      "title": "Cybersecurity Incident Involving Consumer Information",
+      "url": "https://investor.equifax.com/news-and-events/news/2017/09-07-2017-213000628",
+      "points": 1044,
+      "num_comments": 532,
+      "virality_score": 10
+    },
+    {
+      "title": "Ex-Twitter exec blows the whistle, alleging reckless cybersecurity policies",
+      "url": "https://www.cnn.com/2022/08/23/tech/twitter-whistleblower-peiter-zatko-security/index.html",
+      "points": 1005,
+      "num_comments": 603,
+      "virality_score": 10
+    },
+    {
+      "title": "China's New Cybersecurity Program: No Place to Hide",
+      "url": "https://www.chinalawblog.com/2019/09/chinas-new-cybersecurity-program-no-place-to-hide.html",
+      "points": 661,
+      "num_comments": 313,
+      "virality_score": 10
+    },
+    {
+      "title": "Oracle attempt to hide cybersecurity incident from customers?",
+      "url": "https://doublepulsar.com/oracle-attempt-to-hide-serious-cybersecurity-incident-from-customers-in-oracle-saas-service-9231c8daff4a",
+      "points": 638,
+      "num_comments": 127,
+      "virality_score": 10
+    },
+    {
+      "title": "Cyber Security: A pre-war reality check",
+      "url": "https://berthub.eu/articles/posts/cyber-security-pre-war-reality-check/",
+      "points": 593,
+      "num_comments": 278,
+      "virality_score": 10
+    }
+  ],
+  "selected_main_topic": "Cybersecurity Incident Involving Consumer Information",
+  "recommended_virality_score": 10
+}

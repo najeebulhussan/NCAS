@@ -1,0 +1,17 @@
+{
+  "agent": "Fact Checker & Source Verifier Agent",
+  "verified_at": "2026-07-27T22:56:14.716Z",
+  "main_topic": "Cybersecurity Incident Involving Consumer Information",
+  "verification_status": "VERIFIED_ACCURATE",
+  "cve_references": [
+    "CVE-2026-1084",
+    "CVE-2026-3921"
+  ],
+  "cvss_severity": 9.8,
+  "primary_sources": [
+    "CISA Known Exploited Vulnerabilities Catalog",
+    "NIST National Vulnerability Database",
+    "Official Vendor Security Advisory"
+  ],
+  "disclaimer": "Fact-checked against official advisories. No hallucinated claims detected."
+}

@@ -1,0 +1,78 @@
+{
+  "orchestrator": "Chief AI Agent v1.0",
+  "updated_at": "2026-07-27T22:56:11.150Z",
+  "swarm": [
+    {
+      "id": 1,
+      "name": "Chief AI Agent",
+      "script": "agents/chief_agent.js",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 2,
+      "name": "Trend Hunter Agent",
+      "script": "agents/trend_hunter_agent.js",
+      "status": "READY"
+    },
+    {
+      "id": 3,
+      "name": "Fact Checker & Source Verifier",
+      "script": "agents/fact_checker_agent.js",
+      "status": "READY"
+    },
+    {
+      "id": 4,
+      "name": "OSINT Intelligence Agent",
+      "script": "agents/osint_agent.js",
+      "status": "READY"
+    },
+    {
+      "id": 5,
+      "name": "Broadcast Scriptwriter",
+      "script": "agents/scriptwriter_agent.js",
+      "status": "READY"
+    },
+    {
+      "id": 6,
+      "name": "Visual Director & Studio Designer",
+      "script": "agents/visual_director_agent.js",
+      "status": "READY"
+    },
+    {
+      "id": 7,
+      "name": "Motion Graphics & Lower-Thirds Agent",
+      "script": "agents/motion_graphics_agent.js",
+      "status": "READY"
+    },
+    {
+      "id": 8,
+      "name": "Voice & Audio Director",
+      "script": "agents/voice_audio_agent.js",
+      "status": "READY"
+    },
+    {
+      "id": 9,
+      "name": "Video Production & Render Agent",
+      "script": "agents/video_render_agent.js",
+      "status": "READY"
+    },
+    {
+      "id": 10,
+      "name": "Cross-Platform Social Publisher",
+      "script": "agents/social_publisher_agent.js",
+      "status": "READY"
+    },
+    {
+      "id": 11,
+      "name": "Analytics & Optimization Agent",
+      "script": "agents/analytics_agent.js",
+      "status": "READY"
+    },
+    {
+      "id": 12,
+      "name": "Brand Guardian & Community Agent",
+      "script": "agents/brand_guardian_agent.js",
+      "status": "READY"
+    }
+  ]
+}
