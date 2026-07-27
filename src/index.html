@@ -166,9 +166,17 @@
           <div class="panel-header">
             <div>
               <h3><i class="fa-solid fa-rss"></i> Breaking Cybersecurity Feed (Hacker News & Security Radar)</h3>
-              <p class="panel-sub">Real-time threat discovery. Click "Generate Teleprompter Script" on any story to instantly update the studio broadcast.</p>
+              <p class="panel-sub">Real-time threat discovery. Click "Generate Teleprompter Script" on any story to update studio broadcast.</p>
             </div>
-            <button class="btn-sm btn-accent" id="btnRefreshFeed"><i class="fa-solid fa-arrows-rotate"></i> Refresh Feed</button>
+            <div class="header-actions">
+              <select class="duration-select-dropdown" id="selectClipSlots">
+                <option value="10,10,10,10,10,10">⚡ 6x10s (60s Standard)</option>
+                <option value="10,10,10">⚡ 3x10s (30s Quick Short)</option>
+                <option value="10,15,8,12,15,10">🔥 Dynamic Slots (10s,15s,8s,12s,15s,10s)</option>
+                <option value="15,15,15,15,15,15">🎬 6x15s (90s Deep Dive)</option>
+              </select>
+              <button class="btn-sm btn-accent" id="btnRefreshFeed"><i class="fa-solid fa-arrows-rotate"></i> Refresh Feed</button>
+            </div>
           </div>
 
           <div class="news-feed-grid" id="liveNewsContainer">

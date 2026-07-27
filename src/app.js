@@ -479,51 +479,74 @@ async function fetchLiveCyberNews() {
 }
 
 function generateScriptFromNews(storyTitle) {
-  // Format 60-second broadcast script into 6 x 10s Google Flow Scene Clips
-  const newScript = [
+  // Read clip slot durations from dropdown
+  const slotSelect = document.getElementById('selectClipSlots');
+  let slotArr = [10, 10, 10, 10, 10, 10];
+  if (slotSelect && slotSelect.value) {
+    slotArr = slotSelect.value.split(',').map(s => parseInt(s.trim(), 10));
+  }
+
+  const templates = [
     {
-      time: "00:00 - 00:10",
-      label: "CLIP 1: INTRO & HOOK (10s)",
+      label: "CLIP 1: INTRO & HOOK",
       text: `Welcome to Weekly Cyber News. I'm @ME, bringing you an urgent security bulletin regarding ${storyTitle.slice(0, 45)}.`,
       lowerThird: "BREAKING CYBER SECURITY BULLETIN",
-      notes: "Google Flow Scene 1 (10s): Studio Reveal • Red alert neon lighting • Camera zooms toward @ME avatar"
+      notes: "Google Flow Scene 1: Studio Reveal • Red alert neon lighting • Camera zooms toward @ME avatar"
     },
     {
-      time: "00:10 - 00:20",
-      label: "CLIP 2: STORY 1A - BREAKING HEADLINE (10s)",
+      label: "CLIP 2: STORY 1A - BREAKING HEADLINE",
       text: `Breaking News: ${storyTitle}. Security teams and analysts worldwide are monitoring this development closely.`,
       lowerThird: storyTitle.length > 36 ? storyTitle.slice(0, 34) + '...' : storyTitle,
-      notes: "Google Flow Scene 2 (10s): Threat heatmap • B-roll attack visualization • Code breach animation"
+      notes: "Google Flow Scene 2: Threat heatmap • B-roll attack visualization • Code breach animation"
     },
     {
-      time: "00:20 - 00:30",
-      label: "CLIP 3: STORY 1B - EXPLOIT ANALYSIS (10s)",
+      label: "CLIP 3: STORY 1B - EXPLOIT ANALYSIS",
       text: `Initial indicators highlight potential zero-day or credential exploitation risks allowing unauthorized lateral movement across endpoints.`,
       lowerThird: "EXPLOIT: Endpoint & Access Vulnerability",
-      notes: "Google Flow Scene 3 (10s): Matrix-style scrolling code • Credential theft graphic"
+      notes: "Google Flow Scene 3: Matrix-style scrolling code • Credential theft graphic"
     },
     {
-      time: "00:30 - 00:40",
-      label: "CLIP 4: STORY 2 - IMPACT & DEFENSE (10s)",
+      label: "CLIP 4: STORY 2 - IMPACT & DEFENSE",
       text: `Security researchers urge system administrators to audit access logs, enforce MFA, and restrict elevated privileges immediately.`,
       lowerThird: "IMPACT: Urgent Log Audit & MFA Enforcement",
-      notes: "Google Flow Scene 4 (10s): Firewall shield animation • SOC dashboard warning"
+      notes: "Google Flow Scene 4: Firewall shield animation • SOC dashboard warning"
     },
     {
-      time: "00:40 - 00:50",
-      label: "CLIP 5: STORY 3 - PATCH ADVISORY (10s)",
+      label: "CLIP 5: STORY 3 - PATCH ADVISORY",
       text: `Organizations are strongly advised to apply vendor security patches and update endpoint defense rules to block active payloads.`,
       lowerThird: "ACTION REQUIRED: Apply Vendor Security Patch",
-      notes: "Google Flow Scene 5 (10s): Threat intelligence feed • Patch advisory graphic"
+      notes: "Google Flow Scene 5: Threat intelligence feed • Patch advisory graphic"
     },
     {
-      time: "00:50 - 01:00",
-      label: "CLIP 6: OUTRO & CALL TO ACTION (10s)",
+      label: "CLIP 6: OUTRO & CALL TO ACTION",
       text: `Stay informed, stay protected, and remember—cyber awareness is your strongest defense. Follow @NajeebCyber for more updates. I'm @ME, signing off.`,
       lowerThird: "Follow @NajeebCyber for Live Intelligence",
-      notes: "Google Flow Scene 6 (10s): Studio Outro • Holographic Globe • Social panel overlay"
+      notes: "Google Flow Scene 6: Studio Outro • Holographic Globe • Social panel overlay"
     }
   ];
+
+  let currentStart = 0;
+  const newScript = slotArr.map((sec, i) => {
+    const endSec = currentStart + sec;
+    function fmt(s) {
+      const min = Math.floor(s / 60);
+      const remainder = s % 60;
+      return `${min < 10 ? '0' + min : min}:${remainder < 10 ? '0' + remainder : remainder}`;
+    }
+    const timecode = `${fmt(currentStart)} - ${fmt(endSec)}`;
+    currentStart = endSec;
+
+    const tmpl = templates[i % templates.length];
+    return {
+      time: timecode,
+      label: `${tmpl.label} (${sec}s)`,
+      text: tmpl.text,
+      lowerThird: tmpl.lowerThird,
+      notes: `${tmpl.notes} (${sec}s clip)`
+    };
+  });
+
+  totalSeconds = currentStart;
 
   // Update scriptData array
   scriptData.length = 0;

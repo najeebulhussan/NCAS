@@ -1,0 +1,141 @@
+{
+  "workflow_version": "2.1-googleflow-batch",
+  "engine": "Google Flow / Veo 2",
+  "global_settings": {
+    "resolution": [
+      1080,
+      1920
+    ],
+    "aspect_ratio": "9:16",
+    "fps": 30,
+    "color_space": "sRGB",
+    "default_negative_prompt": "blurry, low quality, distorted, extra limbs, bad lighting, watermark, oversaturated, text artifact",
+    "voice_actor": "@ME (AI Anchor - Professional Male Broadcast Voice)",
+    "brand_watermark": "@NajeebCyber"
+  },
+  "project_metadata": {
+    "project": "NajeebCyber AI Studio (NCAS)",
+    "handle": "@NajeebCyber",
+    "topic": "Global Cyber Attack Surge",
+    "duration": "60 Seconds Total",
+    "clipFormat": "6 Custom Clips [10s, 10s, 10s, 10s, 10s, 10s]",
+    "aspectRatio": "9:16 (Vertical Short)",
+    "generatedAt": "2026-07-27T20:45:11.252Z"
+  },
+  "scenes": [
+    {
+      "scene_index": 1,
+      "timecode": "00:00 - 00:10",
+      "duration_seconds": 10,
+      "scene_title": "CLIP 1: INTRO & HOOK",
+      "generation_prompt": "Ultra-modern Cyber News Studio. Giant LED wall displaying world cyber attack map with glowing blue neon lighting. Floating digital globe & animated hexagons. Camera slowly zooms toward @ME AI Avatar anchor in navy tech suit. 9:16 vertical, photorealistic, 4K render. Duration: 10s.",
+      "camera_motion": "Slow Zoom In",
+      "voiceover_script": "Welcome to Weekly Cyber News. I'm @ME, bringing you an urgent security bulletin regarding Global Cyber Attack Surge.",
+      "graphics_overlay": {
+        "type": "Lower Third Banner",
+        "text": "BREAKING NEWS: GLOBAL CYBER ATTACK SURGE",
+        "color_theme": "Alert Red",
+        "font": "Inter-Bold"
+      },
+      "audio_track": {
+        "background_music": "Cyber Synth News Ambience (-18dB)",
+        "sfx_cue": "News intro riser -> Low futuristic synth bass pulse"
+      }
+    },
+    {
+      "scene_index": 2,
+      "timecode": "00:10 - 00:20",
+      "duration_seconds": 10,
+      "scene_title": "CLIP 2: STORY 1A - BREAKING THREAT",
+      "generation_prompt": "Digital threat dashboard, email attack animation, red warning graphics flickering in background, floating glowing headline text. 9:16 vertical, cinematic lighting, 4K. Duration: 10s.",
+      "camera_motion": "Subtle Pan",
+      "voiceover_script": "First up: Security researchers report a significant advisory regarding Global Cyber Attack Surge, urging immediate mitig. Security teams and analysts worldwide are monitoring this development.",
+      "graphics_overlay": {
+        "type": "Lower Third Banner",
+        "text": "Global Cyber Attack Surge",
+        "color_theme": "Alert Red",
+        "font": "Inter-Bold"
+      },
+      "audio_track": {
+        "background_music": "Cyber Synth News Ambience (-18dB)",
+        "sfx_cue": "Subtle cyber WHOOSH transition"
+      }
+    },
+    {
+      "scene_index": 3,
+      "timecode": "00:20 - 00:30",
+      "duration_seconds": 10,
+      "scene_title": "CLIP 3: STORY 1B - ATTACK VECTOR",
+      "generation_prompt": "B-roll graphic of matrix-style scrolling code, credential theft animation, multi-factor authentication bypass graphic. 9:16 vertical, cyber aesthetic. Duration: 10s.",
+      "camera_motion": "Subtle Pan",
+      "voiceover_script": "Initial reports indicate potential zero-day or credential exploitation risks allowing unauthorized lateral movement across endpoints.",
+      "graphics_overlay": {
+        "type": "Lower Third Banner",
+        "text": "ATTACK VECTOR: Endpoint & Access Exploit",
+        "color_theme": "Cyber Cyan",
+        "font": "Inter-Bold"
+      },
+      "audio_track": {
+        "background_music": "Cyber Synth News Ambience (-18dB)",
+        "sfx_cue": "Data stream click SFX"
+      }
+    },
+    {
+      "scene_index": 4,
+      "timecode": "00:30 - 00:40",
+      "duration_seconds": 10,
+      "scene_title": "CLIP 4: STORY 2 - AI THREAT & ZERO-DAY",
+      "generation_prompt": "AI brain neural network animation, firewall breach graphics, glowing blue cyber defense shield. 9:16 vertical, futuristic 3D graphics. Duration: 10s.",
+      "camera_motion": "Subtle Pan",
+      "voiceover_script": "Additionally, AI-assisted scanning scripts are accelerating exploitation windows, making automated patch management essential.",
+      "graphics_overlay": {
+        "type": "Lower Third Banner",
+        "text": "AI-POWERED THREAT: Automated Exploitation",
+        "color_theme": "Cyber Cyan",
+        "font": "Inter-Bold"
+      },
+      "audio_track": {
+        "background_music": "Cyber Synth News Ambience (-18dB)",
+        "sfx_cue": "Pulse chime SFX"
+      }
+    },
+    {
+      "scene_index": 5,
+      "timecode": "00:40 - 00:50",
+      "duration_seconds": 10,
+      "scene_title": "CLIP 5: STORY 3 - MITIGATION ADVISORY",
+      "generation_prompt": "Global threat heatmap, SOC analyst dashboard, threat intelligence feeds, glowing green patch icons. 9:16 vertical, high-tech dashboard. Duration: 10s.",
+      "camera_motion": "Subtle Pan",
+      "voiceover_script": "Organizations are urged to audit access logs, enforce strict multi-factor authentication, and apply vendor security patches immediately.",
+      "graphics_overlay": {
+        "type": "Lower Third Banner",
+        "text": "ACTION REQUIRED: Enforce Zero-Trust & Patch",
+        "color_theme": "Cyber Cyan",
+        "font": "Inter-Bold"
+      },
+      "audio_track": {
+        "background_music": "Cyber Synth News Ambience (-18dB)",
+        "sfx_cue": "Security alert hum SFX"
+      }
+    },
+    {
+      "scene_index": 6,
+      "timecode": "00:50 - 01:00",
+      "duration_seconds": 10,
+      "scene_title": "CLIP 6: OUTRO & CALL TO ACTION",
+      "generation_prompt": "Return to Cyber News Studio with rotating blue holographic globe. Glowing social media handle @NajeebCyber floating on screen. Camera zooms out slowly. 9:16 vertical, 4K render. Duration: 10s.",
+      "camera_motion": "Slow Zoom Out",
+      "voiceover_script": "Stay informed, stay protected, and remember—cyber awareness is your strongest defense. Follow @NajeebCyber for more updates. I'm @ME, see you next week.",
+      "graphics_overlay": {
+        "type": "Lower Third Banner",
+        "text": "Follow @NajeebCyber for Daily Updates",
+        "color_theme": "Cyber Cyan",
+        "font": "Inter-Bold"
+      },
+      "audio_track": {
+        "background_music": "Cyber Synth News Ambience (-18dB)",
+        "sfx_cue": "Outro musical resolve -> Logo sting"
+      }
+    }
+  ]
+}
