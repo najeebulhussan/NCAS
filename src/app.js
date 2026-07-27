@@ -59,42 +59,49 @@ function initTabs() {
   });
 }
 
-// 3. Teleprompter & Video Telecast Simulation
+// 3. Teleprompter & Video Telecast Simulation (Google Flow 10s Clips Standard)
 const scriptData = [
   {
-    time: "00:00 - 00:06",
-    label: "INTRO",
+    time: "00:00 - 00:10",
+    label: "CLIP 1: INTRO & HOOK (10s)",
     text: "Welcome to Weekly Cyber News. I'm @ME, bringing you this week's biggest cybersecurity stories from around the world.",
     lowerThird: "WEEKLY CYBER NEWS BULLETIN",
-    notes: "Visual: Studio Reveal • Zoom toward avatar • Lower third active"
+    notes: "Google Flow Scene 1 (10s): Ultra-modern Cyber News Studio • Giant LED attack heatmap • Camera zooms toward @ME avatar"
   },
   {
-    time: "00:06 - 00:20",
-    label: "STORY 1",
-    text: "First up: Security researchers reveal that phishing attacks are rapidly evolving. Cybercriminals are moving beyond static login pages to real-time session hijacking, bypassing traditional multi-factor authentication in seconds.",
+    time: "00:10 - 00:20",
+    label: "CLIP 2: STORY 1A - BREAKING THREAT (10s)",
+    text: "First up: Security researchers reveal that phishing attacks are rapidly evolving into real-time session hijacking.",
     lowerThird: "Phishing Attacks Evolve Into Real-Time Account Hijacking",
-    notes: "Visual: Digital phishing dashboard • Red warning graphics • Phishing email animation"
+    notes: "Google Flow Scene 2 (10s): Digital phishing dashboard • Red warning graphics • Phishing email animation"
   },
   {
-    time: "00:20 - 00:36",
-    label: "STORY 2",
-    text: "In AI security news: Reports highlight rising concerns as autonomous AI agents demonstrate capabilities to scan, exploit, and breach vulnerable web endpoints without human intervention, sparking fresh urgency for AI defense frameworks.",
+    time: "00:20 - 00:30",
+    label: "CLIP 3: STORY 1B - ATTACK VECTOR (10s)",
+    text: "Attackers bypass traditional multi-factor authentication in seconds using automated proxy relay tools.",
+    lowerThird: "ATTACK VECTOR: Real-Time Proxy Session Theft",
+    notes: "Google Flow Scene 3 (10s): Matrix-style scrolling code • Credential theft animation • MFA bypass graphic"
+  },
+  {
+    time: "00:30 - 00:40",
+    label: "CLIP 4: STORY 2 - AI EXPLOITATION (10s)",
+    text: "In AI security: Autonomous AI agents demonstrate capabilities to scan and exploit web endpoints without human intervention.",
     lowerThird: "AI Models Hack Tech Startups in Unprecedented Event",
-    notes: "Visual: AI brain neural network • Firewall breach graphics • Cyber defense shield"
+    notes: "Google Flow Scene 4 (10s): AI brain neural network animation • Firewall breach graphics • Cyber defense shield"
   },
   {
-    time: "00:36 - 00:50",
-    label: "STORY 3",
-    text: "And globally: Security agencies warn organizations worldwide about escalating identity attacks and credential stuffing. Experts urge businesses to enforce zero-trust policies and patch critical infrastructure immediately.",
-    lowerThird: "Global Cyber Threat Landscape Intensifies",
-    notes: "Visual: Global threat heatmap • SOC analyst dashboard • Threat intelligence feeds"
+    time: "00:40 - 00:50",
+    label: "CLIP 5: STORY 3 - GLOBAL MITIGATION (10s)",
+    text: "Security agencies urge businesses to enforce zero-trust policies, audit access logs, and patch critical systems immediately.",
+    lowerThird: "MITIGATION: Enforce Zero-Trust & Patch Immediately",
+    notes: "Google Flow Scene 5 (10s): Global threat heatmap • SOC analyst dashboard • Threat intelligence feeds"
   },
   {
     time: "00:50 - 01:00",
-    label: "OUTRO",
-    text: "That's your Weekly Cyber News update. Stay informed, stay protected, and remember—cyber awareness is your strongest defense. Follow @NajeebCyber for more updates. I'm @ME, see you in the next bulletin.",
+    label: "CLIP 6: OUTRO & CALL TO ACTION (10s)",
+    text: "Stay informed, stay protected, and remember—cyber awareness is your strongest defense. Follow @NajeebCyber for more updates. I'm @ME, see you next week.",
     lowerThird: "Follow @NajeebCyber for Daily Updates",
-    notes: "Visual: Studio Outro • Rotating blue holographic globe • Social panel"
+    notes: "Google Flow Scene 6 (10s): Return to Cyber Studio • Rotating blue holographic globe • Social media panel overlay"
   }
 ];
 
@@ -400,35 +407,49 @@ async function fetchLiveCyberNews() {
 }
 
 function generateScriptFromNews(storyTitle) {
-  // Format 60-second broadcast script centered around the selected live story
+  // Format 60-second broadcast script into 6 x 10s Google Flow Scene Clips
   const newScript = [
     {
-      time: "00:00 - 00:06",
-      label: "INTRO",
-      text: `Welcome to Weekly Cyber News. I'm @ME, bringing you an urgent breaking security update.`,
+      time: "00:00 - 00:10",
+      label: "CLIP 1: INTRO & HOOK (10s)",
+      text: `Welcome to Weekly Cyber News. I'm @ME, bringing you an urgent security bulletin regarding ${storyTitle.slice(0, 45)}.`,
       lowerThird: "BREAKING CYBER SECURITY BULLETIN",
-      notes: "Visual: Studio Reveal • Red alert lighting • Lower third active"
+      notes: "Google Flow Scene 1 (10s): Studio Reveal • Red alert neon lighting • Camera zooms toward @ME avatar"
     },
     {
-      time: "00:06 - 00:25",
-      label: "MAIN STORY (BREAKING)",
-      text: `Breaking News: ${storyTitle}. Security teams and analysts worldwide are monitoring this development closely to mitigate potential attack vectors.`,
-      lowerThird: storyTitle.length > 40 ? storyTitle.slice(0, 38) + '...' : storyTitle,
-      notes: "Visual: Threat heatmap • B-roll attack visualization • Code breach animation"
+      time: "00:10 - 00:20",
+      label: "CLIP 2: STORY 1A - BREAKING HEADLINE (10s)",
+      text: `Breaking News: ${storyTitle}. Security teams and analysts worldwide are monitoring this development closely.`,
+      lowerThird: storyTitle.length > 36 ? storyTitle.slice(0, 34) + '...' : storyTitle,
+      notes: "Google Flow Scene 2 (10s): Threat heatmap • B-roll attack visualization • Code breach animation"
     },
     {
-      time: "00:25 - 00:45",
-      label: "ANALYSIS & IMPACT",
-      text: `Initial indicators highlight potential zero-day or credential exploitation risks. Organizations are advised to audit access logs, enforce MFA, and apply vendor security patches immediately.`,
-      lowerThird: "IMPACT: Urgent Patch & Access Audit Recommended",
-      notes: "Visual: Firewall shield animation • SOC dashboard"
+      time: "00:20 - 00:30",
+      label: "CLIP 3: STORY 1B - EXPLOIT ANALYSIS (10s)",
+      text: `Initial indicators highlight potential zero-day or credential exploitation risks allowing unauthorized lateral movement across endpoints.`,
+      lowerThird: "EXPLOIT: Endpoint & Access Vulnerability",
+      notes: "Google Flow Scene 3 (10s): Matrix-style scrolling code • Credential theft graphic"
     },
     {
-      time: "00:45 - 01:00",
-      label: "OUTRO & ACTION",
-      text: `That's your live Cyber Security update. Stay informed, stay protected, and remember—cyber awareness is your strongest defense. Follow @NajeebCyber for more updates. I'm @ME, signing off.`,
-      lowerThird: "Follow @NajeebCyber for Live Cyber Intelligence",
-      notes: "Visual: Studio Outro • Holographic Globe • Social panel"
+      time: "00:30 - 00:40",
+      label: "CLIP 4: STORY 2 - IMPACT & DEFENSE (10s)",
+      text: `Security researchers urge system administrators to audit access logs, enforce MFA, and restrict elevated privileges immediately.`,
+      lowerThird: "IMPACT: Urgent Log Audit & MFA Enforcement",
+      notes: "Google Flow Scene 4 (10s): Firewall shield animation • SOC dashboard warning"
+    },
+    {
+      time: "00:40 - 00:50",
+      label: "CLIP 5: STORY 3 - PATCH ADVISORY (10s)",
+      text: `Organizations are strongly advised to apply vendor security patches and update endpoint defense rules to block active payloads.`,
+      lowerThird: "ACTION REQUIRED: Apply Vendor Security Patch",
+      notes: "Google Flow Scene 5 (10s): Threat intelligence feed • Patch advisory graphic"
+    },
+    {
+      time: "00:50 - 01:00",
+      label: "CLIP 6: OUTRO & CALL TO ACTION (10s)",
+      text: `Stay informed, stay protected, and remember—cyber awareness is your strongest defense. Follow @NajeebCyber for more updates. I'm @ME, signing off.`,
+      lowerThird: "Follow @NajeebCyber for Live Intelligence",
+      notes: "Google Flow Scene 6 (10s): Studio Outro • Holographic Globe • Social panel overlay"
     }
   ];
 

@@ -21,9 +21,9 @@ if (cve) {
   topic = `Critical Vulnerability ${cve}`;
 }
 
-console.log(`\n==================================================`);
-console.log(` 🛡️  NCAS AUTO SCRIPT GENERATOR (OmniFlash v2.0)`);
-console.log(`==================================================`);
+console.log(`\n=============================================================`);
+console.log(` 🛡️  NCAS SCRIPT GENERATOR (Google Flow 10s Scene Standard)`);
+console.log(`=============================================================`);
 console.log(`Target Topic: "${topic}"\n`);
 
 function httpGet(url) {
@@ -73,7 +73,7 @@ async function generateScript() {
     searchContext = `Security researchers report a significant advisory regarding ${topic}, urging immediate mitigation and system audits.`;
   }
 
-  console.log(`[2/3] Constructing 60-second broadcast script...`);
+  console.log(`[2/3] Constructing 6 × 10s Google Flow Scene Clips...`);
 
   const slug = topic.toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g, '');
   const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
@@ -83,90 +83,124 @@ async function generateScript() {
     fs.mkdirSync(outputDir, { recursive: true });
   }
 
-  // 60s Script Object
+  // 6 × 10s Google Flow Scene Clips Package
   const scriptPackage = {
     metadata: {
       project: "NajeebCyber AI Studio (NCAS)",
       handle: "@NajeebCyber",
       topic: topic,
       cve: cve || undefined,
-      duration: "60 Seconds",
+      duration: "60 Seconds Total",
+      clipFormat: "6 Clips × 10 Seconds Each (Google Flow Standard)",
       aspectRatio: "9:16 (Vertical Short)",
       generatedAt: new Date().toISOString()
     },
-    segments: [
+    clips: [
       {
-        timestamp: "00:00 - 00:06",
-        segment: "INTRO",
+        clipId: 1,
+        durationSeconds: 10,
+        timestamp: "00:00 - 00:10",
+        label: "CLIP 1: INTRO & HOOK",
         speaker: "@ME (AI Anchor)",
         script: `Welcome to Weekly Cyber News. I'm @ME, bringing you an urgent security bulletin regarding ${topic}.`,
-        visualPrompt: "Ultra-modern cyber news studio • Giant LED attack heatmap wall • Blue neon studio lighting • Camera slowly zooms toward avatar",
-        lowerThird: `BREAKING NEWS: ${topic.toUpperCase().slice(0, 32)}`,
-        audioEffect: "News intro riser -> Low futuristic synth bass pulse"
+        flowPrompt: `Ultra-modern Cyber News Studio. Giant LED wall displaying world cyber attack map with glowing blue neon lighting. Floating digital globe & animated hexagons. Camera slowly zooms toward @ME AI Avatar anchor in navy tech suit. 9:16 vertical, photorealistic, 4K render.`,
+        lowerThird: `BREAKING NEWS: ${topic.toUpperCase().slice(0, 28)}`,
+        audioCue: "News intro riser -> Low futuristic synth bass pulse"
       },
       {
-        timestamp: "00:06 - 00:25",
-        segment: "STORY 1 (BREAKING THREAT)",
+        clipId: 2,
+        durationSeconds: 10,
+        timestamp: "00:10 - 00:20",
+        label: "CLIP 2: STORY 1A - BREAKING THREAT",
         speaker: "@ME (AI Anchor)",
-        script: `First up: ${searchContext}. Cyber security teams are actively investigating the potential impact and attack vectors.`,
-        visualPrompt: "Digital threat dashboard • B-roll of animated matrix code breach • Floating holographic warnings",
-        lowerThird: topic.length > 38 ? topic.slice(0, 36) + '...' : topic,
-        audioEffect: "Subtle cyber WHOOSH transition"
+        script: `First up: ${searchContext.slice(0, 110)}. Security teams and analysts worldwide are monitoring this development.`,
+        flowPrompt: `Digital threat dashboard, email attack animation, red warning graphics flickering in background, floating glowing headline text. 9:16 vertical, cinematic lighting, 4K.`,
+        lowerThird: topic.length > 36 ? topic.slice(0, 34) + '...' : topic,
+        audioCue: "Subtle cyber WHOOSH transition"
       },
       {
-        timestamp: "00:25 - 00:45",
-        segment: "STORY 2 (TECHNICAL ANALYSIS & MITIGATION)",
+        clipId: 3,
+        durationSeconds: 10,
+        timestamp: "00:20 - 00:30",
+        label: "CLIP 3: STORY 1B - ATTACK VECTOR",
         speaker: "@ME (AI Anchor)",
-        script: `Security analysts strongly advise all system administrators and users to enforce multi-factor authentication, audit access logs, and apply official patches immediately.`,
-        visualPrompt: "Firewall defense shield animation • SOC analyst dashboard • Patch advisory graphic",
-        lowerThird: "ACTION REQUIRED: Apply Patch & Enforce MFA",
-        audioEffect: "Data stream click SFX"
+        script: `Initial reports indicate potential zero-day or credential exploitation risks allowing unauthorized lateral movement across endpoints.`,
+        flowPrompt: `B-roll graphic of matrix-style scrolling code, credential theft animation, multi-factor authentication bypass graphic. 9:16 vertical, cyber aesthetic.`,
+        lowerThird: `ATTACK VECTOR: Endpoint & Access Exploit`,
+        audioCue: "Data stream click SFX"
       },
       {
-        timestamp: "00:45 - 01:00",
-        segment: "OUTRO",
+        clipId: 4,
+        durationSeconds: 10,
+        timestamp: "00:30 - 00:40",
+        label: "CLIP 4: STORY 2 - AI THREAT & ZERO-DAY",
         speaker: "@ME (AI Anchor)",
-        script: `That's your live Cyber Security update. Stay informed, stay protected, and remember—cyber awareness is your strongest defense. Follow @NajeebCyber for daily updates. I'm @ME, signing off.`,
-        visualPrompt: "Return to Cyber Studio • Rotating blue holographic globe • Social media panel (@NajeebCyber)",
-        lowerThird: "Follow @NajeebCyber for Daily Updates",
-        audioEffect: "Synth outro fade out"
+        script: `Additionally, AI-assisted scanning scripts are accelerating exploitation windows, making automated patch management essential.`,
+        flowPrompt: `AI brain neural network animation, firewall breach graphics, glowing blue cyber defense shield. 9:16 vertical, futuristic 3D graphics.`,
+        lowerThird: `AI-POWERED THREAT: Automated Exploitation`,
+        audioCue: "Pulse chime SFX"
+      },
+      {
+        clipId: 5,
+        durationSeconds: 10,
+        timestamp: "00:40 - 00:50",
+        label: "CLIP 5: STORY 3 - MITIGATION ADVISORY",
+        speaker: "@ME (AI Anchor)",
+        script: `Organizations are urged to audit access logs, enforce strict multi-factor authentication, and apply vendor security patches immediately.`,
+        flowPrompt: `Global threat heatmap, SOC analyst dashboard, threat intelligence feeds, glowing green patch icons. 9:16 vertical, high-tech dashboard.`,
+        lowerThird: `ACTION REQUIRED: Enforce Zero-Trust & Patch`,
+        audioCue: "Alert chime SFX"
+      },
+      {
+        clipId: 6,
+        durationSeconds: 10,
+        timestamp: "00:50 - 01:00",
+        label: "CLIP 6: OUTRO & CALL TO ACTION",
+        speaker: "@ME (AI Anchor)",
+        script: `Stay informed, stay protected, and remember—cyber awareness is your strongest defense. Follow @NajeebCyber for more updates. I'm @ME, see you next week.`,
+        flowPrompt: `Return to Cyber News Studio with rotating blue holographic globe. Glowing social media follow panel overlay (@NajeebCyber). 9:16 vertical, studio sign-off.`,
+        lowerThird: `Follow @NajeebCyber for Daily Updates`,
+        audioCue: "Synth outro fade out"
       }
     ]
   };
 
   // Format Markdown Version
-  let markdownText = `# 🎬 NCAS 60-Second Broadcast Script: ${topic}\n\n`;
-  markdownText += `**Project:** NajeebCyber AI Studio  \n`;
-  markdownText += `**Handle:** \`@NajeebCyber\`  \n`;
-  markdownText += `**Generated At:** ${new Date().toLocaleString()}  \n`;
-  markdownText += `**Duration:** 60 Seconds (9:16 Vertical)  \n\n`;
+  let markdownText = `# 🎬 NCAS 60s Broadcast Script (Google Flow 6 × 10s Scene Clips)\n\n`;
+  markdownText += `**Topic:** ${topic}  \n`;
+  markdownText += `**Project:** NajeebCyber AI Studio (\`@NajeebCyber\`)  \n`;
+  markdownText += `**Clip Format:** Exactly 6 Clips × 10 Seconds Each (60s Total)  \n`;
+  markdownText += `**Generated At:** ${new Date().toLocaleString()}  \n\n`;
   markdownText += `---\n\n`;
 
-  scriptPackage.segments.forEach((seg, idx) => {
-    markdownText += `## ${idx + 1}. ${seg.segment} [${seg.timestamp}]\n\n`;
-    markdownText += `**Presenter Script:**  \n> "${seg.script}"\n\n`;
-    markdownText += `**Lower Third Overlay:** \`${seg.lowerThird}\`  \n`;
-    markdownText += `**Visual Camera Directions:** ${seg.visualPrompt}  \n`;
-    markdownText += `**Audio Cues:** ${seg.audioEffect}  \n\n`;
+  scriptPackage.clips.forEach((clip) => {
+    markdownText += `## ${clip.label} [${clip.timestamp}]\n\n`;
+    markdownText += `**Google Flow Generation Prompt (10s):**  \n\`\`\`text\n${clip.flowPrompt}\n\`\`\`\n\n`;
+    markdownText += `**Presenter Script (10s):**  \n> "${clip.script}"\n\n`;
+    markdownText += `**Lower Third Overlay:** \`${clip.lowerThird}\`  \n`;
+    markdownText += `**Audio Cue:** ${clip.audioCue}  \n\n`;
     markdownText += `---\n\n`;
   });
 
-  const mdFile = path.join(outputDir, `${slug}_${timestamp}.md`);
-  const jsonFile = path.join(outputDir, `${slug}_${timestamp}.json`);
+  const mdFile = path.join(outputDir, `${slug}_googleflow_10s_${timestamp}.md`);
+  const jsonFile = path.join(outputDir, `${slug}_googleflow_10s_${timestamp}.json`);
 
   fs.writeFileSync(mdFile, markdownText);
   fs.writeFileSync(jsonFile, JSON.stringify(scriptPackage, null, 2));
 
-  console.log(`[3/3] Script files generated successfully!`);
+  console.log(`[3/3] Google Flow 10s Clip Package generated successfully!`);
   console.log(`\n📄 Markdown Script: ${mdFile}`);
   console.log(`📊 JSON Render Spec: ${jsonFile}\n`);
 
-  console.log(`--------------------------------------------------`);
-  console.log(` 📺 TELEPROMPTER PREVIEW (First 2 Segments):`);
-  console.log(`--------------------------------------------------`);
-  console.log(`[00:00 - 00:06] "${scriptPackage.segments[0].script}"`);
-  console.log(`[00:06 - 00:25] "${scriptPackage.segments[1].script}"`);
-  console.log(`--------------------------------------------------\n`);
+  console.log(`-------------------------------------------------------------`);
+  console.log(` 🎬 GOOGLE FLOW 10s CLIPS SUMMARY (6 Clips x 10s):`);
+  console.log(`-------------------------------------------------------------`);
+  scriptPackage.clips.forEach(c => {
+    console.log(`[${c.timestamp}] ${c.label}`);
+    console.log(`   Prompt: ${c.flowPrompt.slice(0, 75)}...`);
+    console.log(`   Script: "${c.script.slice(0, 75)}..."\n`);
+  });
+  console.log(`-------------------------------------------------------------\n`);
 }
 
 generateScript().catch(err => console.error('Error generating script:', err));

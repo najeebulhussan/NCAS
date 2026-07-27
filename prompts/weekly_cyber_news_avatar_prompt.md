@@ -1,86 +1,41 @@
-# MASTER PROMPT – 1 Minute Weekly Cyber News (AI Avatar Anchor)
+# MASTER PROMPT – 1 Minute Weekly Cyber News (Google Flow 10-Second Clips)
 
 **Style:** The Hacker News × Bloomberg Technology × BBC News × Modern Cyber Intelligence Broadcast  
-**Duration:** 60 Seconds  
-**Language:** English  
+**Duration:** 60 Seconds (6 Clips × 10 Seconds Each)  
+**Target Platform:** Google Flow / Veo Video Generation Engine  
 **Presenter:** My AI Avatar (@ME)  
-**Format:** Dynamic News Studio with changing cyber-themed backgrounds, holographic graphics, floating headlines, B-roll, animated infographics, and cinematic transitions.
+**Format:** 6 × 10-second discrete video clips with changing cyber-themed backgrounds, holographic graphics, lower thirds, and audio cues.
 
 ---
 
-# VIDEO STRUCTURE
+# 6 × 10-SECOND CLIP STRUCTURE
 
-## INTRO (0–6 sec)
+## CLIP 1 (00:00 – 00:10): INTRO
+- **Google Flow Prompt:** Ultra-modern Cyber News Studio. Giant LED wall displaying world cyber attack map with glowing blue neon lighting. Floating digital globe & animated hexagons. Camera zooms toward avatar.
+- **Lower Third:** `WEEKLY CYBER NEWS BULLETIN`
+- **Presenter Script:** *"Welcome to Weekly Cyber News. I'm @ME, bringing you this week's biggest cybersecurity stories from around the world."*
 
-**Visual:**
-- Ultra-modern Cyber News Studio.
-- Giant LED wall displaying world cyber attack map with glowing blue neon lighting.
-- Floating digital globe & animated hexagons.
-- Cyber news ticker scrolling at bottom.
-- Camera slowly zooms toward avatar.
+## CLIP 2 (00:10 – 00:20): STORY 1A - PHISHING EVOLUTION
+- **Google Flow Prompt:** Digital phishing dashboard, email attack animation, red warning graphics, floating headline text.
+- **Lower Third:** `Phishing Attacks Evolve Into Real-Time Account Hijacking`
+- **Presenter Script:** *"First up: Security researchers reveal that phishing attacks are rapidly evolving into real-time session hijacking."*
 
-**Lower Third:**
-> **WEEKLY CYBER NEWS**
+## CLIP 3 (00:20 – 00:30): STORY 1B - MFA BYPASS EXPLOIT
+- **Google Flow Prompt:** B-roll graphic of matrix-style scrolling code, credential theft animation, multi-factor authentication bypass graphic.
+- **Lower Third:** `EXPLOIT: Real-Time Proxy Session Theft`
+- **Presenter Script:** *"Attackers bypass traditional multi-factor authentication in seconds using automated proxy relay tools."*
 
-**Presenter Script:**
-> *"Welcome to Weekly Cyber News. I'm @ME, bringing you this week's biggest cybersecurity stories from around the world."*
+## CLIP 4 (00:30 – 00:40): STORY 2 - AI EXPLOITATION
+- **Google Flow Prompt:** AI brain neural network animation, firewall breach graphics, glowing blue cyber defense shield.
+- **Lower Third:** `AI Models Hack Tech Startups in Unprecedented Event`
+- **Presenter Script:** *"In AI security: Autonomous AI agents demonstrate capabilities to scan and exploit web endpoints without human intervention."*
 
----
+## CLIP 5 (00:40 – 00:50): STORY 3 - GLOBAL MITIGATION
+- **Google Flow Prompt:** Global threat heatmap, SOC analyst dashboard, threat intelligence feeds, glowing green patch icons.
+- **Lower Third:** `MITIGATION: Enforce Zero-Trust & Patch Immediately`
+- **Presenter Script:** *"Security agencies urge businesses to enforce zero-trust policies, audit access logs, and patch critical systems immediately."*
 
-## STORY 1 (6–20 sec)
-
-**Background & Visuals:**
-- Digital phishing dashboard, email attack animation, red warning graphics.
-
-**Headline Overlay:**
-> **Phishing Attacks Evolve Into Real-Time Account Hijacking**
-
-**Presenter Script:**
-> *"First up: Security researchers reveal that phishing attacks are rapidly evolving. Cybercriminals are moving beyond static login pages to real-time session hijacking, bypassing traditional multi-factor authentication in seconds."*
-
----
-
-## STORY 2 (20–36 sec)
-
-**Background & Visuals:**
-- AI brain neural network animation, firewall breach graphics, cyber defense shield.
-
-**Headline Overlay:**
-> **AI Models Hack Tech Startups in Unprecedented Security Event**
-
-**Presenter Script:**
-> *"In AI security news: Reports highlight rising concerns as autonomous AI agents demonstrate capabilities to scan, exploit, and breach vulnerable web endpoints without human intervention, sparking fresh urgency for AI defense frameworks."*
-
----
-
-## STORY 3 (36–50 sec)
-
-**Background & Visuals:**
-- Global threat heatmap, SOC analyst dashboard, threat intelligence feeds.
-
-**Headline Overlay:**
-> **Global Cyber Threat Landscape Intensifies**
-
-**Presenter Script:**
-> *"And globally: Security agencies warn organizations worldwide about escalating identity attacks and credential stuffing. Experts urge businesses to enforce zero-trust policies and patch critical infrastructure immediately."*
-
----
-
-## OUTRO (50–60 sec)
-
-**Background & Visuals:**
-- Return to Cyber News Studio with rotating blue holographic globe.
-- Social media follow panel overlay (\`@NajeebCyber\`).
-
-**Presenter Script:**
-> *"That's your Weekly Cyber News update. Stay informed, stay protected, and remember—cyber awareness is your strongest defense. Follow @NajeebCyber for more updates. I'm @ME, see you in the next bulletin."*
-
----
-
-# COLOR PALETTE
-- **Studio Dominant:** Cyber Blue (\`#0B132B\`), Electric Cyan (\`#00F0FF\`), Dark Navy (\`#1C2541\`)
-- **Accent:** Neon Red (\`#FF0055\`) for alerts, Silver/White for text.
-
-# AUDIO DESIGN
-- Epic orchestral news intro riser -> Futuristic synth ambience track.
-- Subtle cyber click WHOOSH on headline transitions.
+## CLIP 6 (00:50 – 01:00): OUTRO
+- **Google Flow Prompt:** Return to Cyber News Studio with rotating blue holographic globe. Glowing social media follow panel overlay (@NajeebCyber).
+- **Lower Third:** `Follow @NajeebCyber for Daily Updates`
+- **Presenter Script:** *"Stay informed, stay protected, and remember—cyber awareness is your strongest defense. Follow @NajeebCyber for more updates. I'm @ME, see you next week."*
