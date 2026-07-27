@@ -1,0 +1,114 @@
+{
+  "metadata": {
+    "project": "NajeebCyber AI Studio (NCAS)",
+    "handle": "@NajeebCyber",
+    "topic": "Global Cyber Attack Surge",
+    "duration": "60 Seconds Total",
+    "clipFormat": "6 Clips × 10 Seconds Each (Google Flow Standard)",
+    "aspectRatio": "9:16 (Vertical Short)",
+    "generatedAt": "2026-07-27T19:34:33.638Z",
+    "languages": [
+      "ENGLISH",
+      "URDU"
+    ],
+    "translatedAt": "2026-07-27T19:47:49.706Z"
+  },
+  "clips": [
+    {
+      "clipId": 1,
+      "timestamp": "00:00 - 00:10",
+      "label": "CLIP 1: INTRO & HOOK",
+      "english": {
+        "script": "Welcome to Weekly Cyber News. I'm @ME, bringing you an urgent security bulletin regarding Global Cyber Attack Surge.",
+        "lowerThird": "BREAKING NEWS: GLOBAL CYBER ATTACK SURGE"
+      },
+      "urdu": {
+        "script": "ہفتہ وار سائبر نیوز میں خوش آمدید ۔ میں @ME ہوں، آپ کے لیے گلوبل سائبر اٹیک سرج سے متعلق ایک فوری سیکورٹی بلیٹن لا رہا ہوں ۔",
+        "lowerThird": "بریکنگ نیوز: عالمی سائبر حملے میں اضافہ"
+      },
+      "bilingualTeleprompter": "[EN] \"Welcome to Weekly Cyber News. I'm @ME, bringing you an urgent security bulletin regarding Global Cyber Attack Surge.\"\n[UR] \"ہفتہ وار سائبر نیوز میں خوش آمدید ۔ میں @ME ہوں، آپ کے لیے گلوبل سائبر اٹیک سرج سے متعلق ایک فوری سیکورٹی بلیٹن لا رہا ہوں ۔\"",
+      "flowPrompt": "Ultra-modern Cyber News Studio. Giant LED wall displaying world cyber attack map with glowing blue neon lighting. Floating digital globe & animated hexagons. Camera slowly zooms toward @ME AI Avatar anchor in navy tech suit. 9:16 vertical, photorealistic, 4K render.",
+      "audioCue": "News intro riser -> Low futuristic synth bass pulse"
+    },
+    {
+      "clipId": 2,
+      "timestamp": "00:10 - 00:20",
+      "label": "CLIP 2: STORY 1A - BREAKING THREAT",
+      "english": {
+        "script": "First up: Security researchers report a significant advisory regarding Global Cyber Attack Surge, urging immediate mitig. Security teams and analysts worldwide are monitoring this development.",
+        "lowerThird": "Global Cyber Attack Surge"
+      },
+      "urdu": {
+        "script": "سب سے پہلے: سیکیورٹی محققین عالمی سائبر حملے کے اضافے کے بارے میں ایک اہم مشاورت کی اطلاع دیتے ہیں، جس میں فوری طور پر تخفیف پر زور دیا جاتا ہے ۔ دنیا بھر میں سیکیورٹی ٹیمیں اور تجزیہ کار اس پیشرفت کی نگرانی کر رہے ہیں ۔",
+        "lowerThird": "عالمی سائبر حملے کا سرج"
+      },
+      "bilingualTeleprompter": "[EN] \"First up: Security researchers report a significant advisory regarding Global Cyber Attack Surge, urging immediate mitig. Security teams and analysts worldwide are monitoring this development.\"\n[UR] \"سب سے پہلے: سیکیورٹی محققین عالمی سائبر حملے کے اضافے کے بارے میں ایک اہم مشاورت کی اطلاع دیتے ہیں، جس میں فوری طور پر تخفیف پر زور دیا جاتا ہے ۔ دنیا بھر میں سیکیورٹی ٹیمیں اور تجزیہ کار اس پیشرفت کی نگرانی کر رہے ہیں ۔\"",
+      "flowPrompt": "Digital threat dashboard, email attack animation, red warning graphics flickering in background, floating glowing headline text. 9:16 vertical, cinematic lighting, 4K.",
+      "audioCue": "Subtle cyber WHOOSH transition"
+    },
+    {
+      "clipId": 3,
+      "timestamp": "00:20 - 00:30",
+      "label": "CLIP 3: STORY 1B - ATTACK VECTOR",
+      "english": {
+        "script": "Initial reports indicate potential zero-day or credential exploitation risks allowing unauthorized lateral movement across endpoints.",
+        "lowerThird": "ATTACK VECTOR: Endpoint & Access Exploit"
+      },
+      "urdu": {
+        "script": "ابتدائی رپورٹس ممکنہ صفر دن یا اسناد کے استحصال کے خطرات کی نشاندہی کرتی ہیں جو اختتامی مقامات پر غیر مجاز پس منظر کی نقل و حرکت کی اجازت دیتا ہے ۔",
+        "lowerThird": "حملہ ویکٹر: اختتامی نقطہ اور رسائی کا استحصال"
+      },
+      "bilingualTeleprompter": "[EN] \"Initial reports indicate potential zero-day or credential exploitation risks allowing unauthorized lateral movement across endpoints.\"\n[UR] \"ابتدائی رپورٹس ممکنہ صفر دن یا اسناد کے استحصال کے خطرات کی نشاندہی کرتی ہیں جو اختتامی مقامات پر غیر مجاز پس منظر کی نقل و حرکت کی اجازت دیتا ہے ۔\"",
+      "flowPrompt": "B-roll graphic of matrix-style scrolling code, credential theft animation, multi-factor authentication bypass graphic. 9:16 vertical, cyber aesthetic.",
+      "audioCue": "Data stream click SFX"
+    },
+    {
+      "clipId": 4,
+      "timestamp": "00:30 - 00:40",
+      "label": "CLIP 4: STORY 2 - AI THREAT & ZERO-DAY",
+      "english": {
+        "script": "Additionally, AI-assisted scanning scripts are accelerating exploitation windows, making automated patch management essential.",
+        "lowerThird": "AI-POWERED THREAT: Automated Exploitation"
+      },
+      "urdu": {
+        "script": "مزید برآں، AI کی مدد سے اسکیننگ اسکرپٹس استحصال کی کھڑکیوں کو تیز کر رہے ہیں، جس سے خودکار پیچ مینجمنٹ ضروری ہو گئی ہے ۔",
+        "lowerThird": "AI سے چلنے والا خطرہ: خودکار استحصال"
+      },
+      "bilingualTeleprompter": "[EN] \"Additionally, AI-assisted scanning scripts are accelerating exploitation windows, making automated patch management essential.\"\n[UR] \"مزید برآں، AI کی مدد سے اسکیننگ اسکرپٹس استحصال کی کھڑکیوں کو تیز کر رہے ہیں، جس سے خودکار پیچ مینجمنٹ ضروری ہو گئی ہے ۔\"",
+      "flowPrompt": "AI brain neural network animation, firewall breach graphics, glowing blue cyber defense shield. 9:16 vertical, futuristic 3D graphics.",
+      "audioCue": "Pulse chime SFX"
+    },
+    {
+      "clipId": 5,
+      "timestamp": "00:40 - 00:50",
+      "label": "CLIP 5: STORY 3 - MITIGATION ADVISORY",
+      "english": {
+        "script": "Organizations are urged to audit access logs, enforce strict multi-factor authentication, and apply vendor security patches immediately.",
+        "lowerThird": "ACTION REQUIRED: Enforce Zero-Trust & Patch"
+      },
+      "urdu": {
+        "script": "تنظیموں پر زور دیا جاتا ہے کہ وہ رسائی کے نوشتہ جات کا آڈٹ کریں، کثیر عنصر کی سخت توثیق نافذ کریں، اور فوری طور پر وینڈر سیکیورٹی پیچ لگائیں ۔",
+        "lowerThird": "کارروائی کی ضرورت ہے: زیرو ٹرسٹ اور پیچ نافذ کریں"
+      },
+      "bilingualTeleprompter": "[EN] \"Organizations are urged to audit access logs, enforce strict multi-factor authentication, and apply vendor security patches immediately.\"\n[UR] \"تنظیموں پر زور دیا جاتا ہے کہ وہ رسائی کے نوشتہ جات کا آڈٹ کریں، کثیر عنصر کی سخت توثیق نافذ کریں، اور فوری طور پر وینڈر سیکیورٹی پیچ لگائیں ۔\"",
+      "flowPrompt": "Global threat heatmap, SOC analyst dashboard, threat intelligence feeds, glowing green patch icons. 9:16 vertical, high-tech dashboard.",
+      "audioCue": "Alert chime SFX"
+    },
+    {
+      "clipId": 6,
+      "timestamp": "00:50 - 01:00",
+      "label": "CLIP 6: OUTRO & CALL TO ACTION",
+      "english": {
+        "script": "Stay informed, stay protected, and remember—cyber awareness is your strongest defense. Follow @NajeebCyber for more updates. I'm @ME, see you next week.",
+        "lowerThird": "Follow @NajeebCyber for Daily Updates"
+      },
+      "urdu": {
+        "script": "باخبر رہیں، محفوظ رہیں، اور یاد رکھیں - سائبر بیداری آپ کا سب سے مضبوط دفاع ہے ۔ مزید اپ ڈیٹس کے لیے @ NajeebCyber کو فالو کریں ۔ میں @ME ہوں، اگلے ہفتے ملیں گے ۔",
+        "lowerThird": "روزانہ کی اپ ڈیٹس کے لیے @ NajeebCyber کو فالو کریں"
+      },
+      "bilingualTeleprompter": "[EN] \"Stay informed, stay protected, and remember—cyber awareness is your strongest defense. Follow @NajeebCyber for more updates. I'm @ME, see you next week.\"\n[UR] \"باخبر رہیں، محفوظ رہیں، اور یاد رکھیں - سائبر بیداری آپ کا سب سے مضبوط دفاع ہے ۔ مزید اپ ڈیٹس کے لیے @ NajeebCyber کو فالو کریں ۔ میں @ME ہوں، اگلے ہفتے ملیں گے ۔\"",
+      "flowPrompt": "Return to Cyber News Studio with rotating blue holographic globe. Glowing social media follow panel overlay (@NajeebCyber). 9:16 vertical, studio sign-off.",
+      "audioCue": "Synth outro fade out"
+    }
+  ]
+}
