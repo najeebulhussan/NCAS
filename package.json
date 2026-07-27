@@ -13,7 +13,8 @@
     "export-subtitles": "node scripts/export_subtitles.js",
     "generate-thumbnail": "node scripts/generate_thumbnail_spec.js",
     "composite-video": "node scripts/composite_video.js",
-    "watchdog": "node scripts/cisa_watchdog.js"
+    "watchdog": "node scripts/cisa_watchdog.js",
+    "generate-voiceover": "node scripts/generate_voiceover.js"
   },
   "keywords": [
     "cybersecurity",

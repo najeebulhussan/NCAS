@@ -1,0 +1,79 @@
+{
+  "metadata": {
+    "project": "NajeebCyber AI Studio (NCAS)",
+    "handle": "@NajeebCyber",
+    "topic": "Global Cyber Attack Surge",
+    "duration": "60 Seconds Total",
+    "clipFormat": "6 Custom Clips [10s, 10s, 10s, 10s, 10s, 10s]",
+    "aspectRatio": "9:16 (Vertical Short)",
+    "generatedAt": "2026-07-27T20:52:43.604Z"
+  },
+  "clips": [
+    {
+      "clipId": 1,
+      "durationSeconds": 10,
+      "timestamp": "00:00 - 00:10",
+      "label": "CLIP 1: INTRO & HOOK",
+      "speaker": "@ME (AI Anchor)",
+      "script": "Welcome to Weekly Cyber News. I'm @ME, bringing you an urgent security bulletin regarding Global Cyber Attack Surge.",
+      "flowPrompt": "Ultra-modern Cyber News Studio. Giant LED wall displaying world cyber attack map with glowing blue neon lighting. Floating digital globe & animated hexagons. Camera slowly zooms toward @ME AI Avatar anchor in navy tech suit. 9:16 vertical, photorealistic, 4K render. Duration: 10s.",
+      "lowerThird": "BREAKING NEWS: GLOBAL CYBER ATTACK SURGE",
+      "audioCue": "News intro riser -> Low futuristic synth bass pulse"
+    },
+    {
+      "clipId": 2,
+      "durationSeconds": 10,
+      "timestamp": "00:10 - 00:20",
+      "label": "CLIP 2: STORY 1A - BREAKING THREAT",
+      "speaker": "@ME (AI Anchor)",
+      "script": "First up: Security researchers report a significant advisory regarding Global Cyber Attack Surge, urging immediate mitig. Security teams and analysts worldwide are monitoring this development.",
+      "flowPrompt": "Digital threat dashboard, email attack animation, red warning graphics flickering in background, floating glowing headline text. 9:16 vertical, cinematic lighting, 4K. Duration: 10s.",
+      "lowerThird": "Global Cyber Attack Surge",
+      "audioCue": "Subtle cyber WHOOSH transition"
+    },
+    {
+      "clipId": 3,
+      "durationSeconds": 10,
+      "timestamp": "00:20 - 00:30",
+      "label": "CLIP 3: STORY 1B - ATTACK VECTOR",
+      "speaker": "@ME (AI Anchor)",
+      "script": "Initial reports indicate potential zero-day or credential exploitation risks allowing unauthorized lateral movement across endpoints.",
+      "flowPrompt": "B-roll graphic of matrix-style scrolling code, credential theft animation, multi-factor authentication bypass graphic. 9:16 vertical, cyber aesthetic. Duration: 10s.",
+      "lowerThird": "ATTACK VECTOR: Endpoint & Access Exploit",
+      "audioCue": "Data stream click SFX"
+    },
+    {
+      "clipId": 4,
+      "durationSeconds": 10,
+      "timestamp": "00:30 - 00:40",
+      "label": "CLIP 4: STORY 2 - AI THREAT & ZERO-DAY",
+      "speaker": "@ME (AI Anchor)",
+      "script": "Additionally, AI-assisted scanning scripts are accelerating exploitation windows, making automated patch management essential.",
+      "flowPrompt": "AI brain neural network animation, firewall breach graphics, glowing blue cyber defense shield. 9:16 vertical, futuristic 3D graphics. Duration: 10s.",
+      "lowerThird": "AI-POWERED THREAT: Automated Exploitation",
+      "audioCue": "Pulse chime SFX"
+    },
+    {
+      "clipId": 5,
+      "durationSeconds": 10,
+      "timestamp": "00:40 - 00:50",
+      "label": "CLIP 5: STORY 3 - MITIGATION ADVISORY",
+      "speaker": "@ME (AI Anchor)",
+      "script": "Organizations are urged to audit access logs, enforce strict multi-factor authentication, and apply vendor security patches immediately.",
+      "flowPrompt": "Global threat heatmap, SOC analyst dashboard, threat intelligence feeds, glowing green patch icons. 9:16 vertical, high-tech dashboard. Duration: 10s.",
+      "lowerThird": "ACTION REQUIRED: Enforce Zero-Trust & Patch",
+      "audioCue": "Security alert hum SFX"
+    },
+    {
+      "clipId": 6,
+      "durationSeconds": 10,
+      "timestamp": "00:50 - 01:00",
+      "label": "CLIP 6: OUTRO & CALL TO ACTION",
+      "speaker": "@ME (AI Anchor)",
+      "script": "Stay informed, stay protected, and remember—cyber awareness is your strongest defense. Follow @NajeebCyber for more updates. I'm @ME, see you next week.",
+      "flowPrompt": "Return to Cyber News Studio with rotating blue holographic globe. Glowing social media handle @NajeebCyber floating on screen. Camera zooms out slowly. 9:16 vertical, 4K render. Duration: 10s.",
+      "lowerThird": "Follow @NajeebCyber for Daily Updates",
+      "audioCue": "Outro musical resolve -> Logo sting"
+    }
+  ]
+}
