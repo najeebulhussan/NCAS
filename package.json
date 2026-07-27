@@ -17,7 +17,8 @@
     "generate-voiceover": "node scripts/generate_voiceover.js",
     "publish-social": "node scripts/publish_social.js",
     "daemon": "node scripts/daemon_loop.js",
-    "setup-ffmpeg": "node scripts/setup_ffmpeg_env.js"
+    "setup-ffmpeg": "node scripts/setup_ffmpeg_env.js",
+    "export-avatar": "node scripts/export_avatar_spec.js"
   },
   "keywords": [
     "cybersecurity",

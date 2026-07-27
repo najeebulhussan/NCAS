@@ -1,0 +1,55 @@
+{
+  "anchor_id": "@ME",
+  "role": "AI Cyber Security Lead & Global Threat Specialist",
+  "channel_handle": "@NajeebCyber",
+  "character_sheet": {
+    "gender_presentation": "Male / Neutral Tech Professional",
+    "wardrobe": "Sleek dark navy tech blazer with glowing cyan lapel pin and high-collared black undershirt",
+    "hair_and_features": "Sharp groomed hair, focused expressive eyes, professional demeanor",
+    "studio_environment": "High-tech virtual SOC newsroom with holographic global attack map and cyber threat counters"
+  },
+  "clip_prompts": [
+    {
+      "clip_number": 1,
+      "duration": "10s",
+      "facial_expression": "Serious Alert",
+      "midjourney_v6_prompt": "Photorealistic 3D portrait of @ME AI news anchor wearing dark navy tech suit with glowing cyan lapel pin, expression of Serious Alert, standing in futuristic cyber studio with glowing red holographic attack map background reading \"ALERT\", vertical 9:16 aspect ratio, cinematic lighting, 8k resolution --ar 9:16 --v 6.0",
+      "dall_e_3_prompt": "A high-end 3D visual of a professional cyber analyst anchor named @ME in a futuristic newsroom. Facial expression: Serious Alert. The background features a glowing red zero-day threat radar overlay and digital telemetry screens. Vertical 9:16 portrait composition."
+    },
+    {
+      "clip_number": 2,
+      "duration": "10s",
+      "facial_expression": "Urgent Concern",
+      "midjourney_v6_prompt": "Photorealistic 3D portrait of @ME AI news anchor wearing dark navy tech suit with glowing cyan lapel pin, expression of Urgent Concern, standing in futuristic cyber studio with glowing red holographic attack map background reading \"ALERT\", vertical 9:16 aspect ratio, cinematic lighting, 8k resolution --ar 9:16 --v 6.0",
+      "dall_e_3_prompt": "A high-end 3D visual of a professional cyber analyst anchor named @ME in a futuristic newsroom. Facial expression: Urgent Concern. The background features a glowing red zero-day threat radar overlay and digital telemetry screens. Vertical 9:16 portrait composition."
+    },
+    {
+      "clip_number": 3,
+      "duration": "10s",
+      "facial_expression": "Technical Focus",
+      "midjourney_v6_prompt": "Photorealistic 3D portrait of @ME AI news anchor wearing dark navy tech suit with glowing cyan lapel pin, expression of Technical Focus, standing in futuristic cyber studio with glowing red holographic attack map background reading \"ALERT\", vertical 9:16 aspect ratio, cinematic lighting, 8k resolution --ar 9:16 --v 6.0",
+      "dall_e_3_prompt": "A high-end 3D visual of a professional cyber analyst anchor named @ME in a futuristic newsroom. Facial expression: Technical Focus. The background features a glowing red zero-day threat radar overlay and digital telemetry screens. Vertical 9:16 portrait composition."
+    },
+    {
+      "clip_number": 4,
+      "duration": "10s",
+      "facial_expression": "Warning Warning",
+      "midjourney_v6_prompt": "Photorealistic 3D portrait of @ME AI news anchor wearing dark navy tech suit with glowing cyan lapel pin, expression of Warning Warning, standing in futuristic cyber studio with glowing red holographic attack map background reading \"ALERT\", vertical 9:16 aspect ratio, cinematic lighting, 8k resolution --ar 9:16 --v 6.0",
+      "dall_e_3_prompt": "A high-end 3D visual of a professional cyber analyst anchor named @ME in a futuristic newsroom. Facial expression: Warning Warning. The background features a glowing red zero-day threat radar overlay and digital telemetry screens. Vertical 9:16 portrait composition."
+    },
+    {
+      "clip_number": 5,
+      "duration": "10s",
+      "facial_expression": "Action Required",
+      "midjourney_v6_prompt": "Photorealistic 3D portrait of @ME AI news anchor wearing dark navy tech suit with glowing cyan lapel pin, expression of Action Required, standing in futuristic cyber studio with glowing red holographic attack map background reading \"ALERT\", vertical 9:16 aspect ratio, cinematic lighting, 8k resolution --ar 9:16 --v 6.0",
+      "dall_e_3_prompt": "A high-end 3D visual of a professional cyber analyst anchor named @ME in a futuristic newsroom. Facial expression: Action Required. The background features a glowing red zero-day threat radar overlay and digital telemetry screens. Vertical 9:16 portrait composition."
+    },
+    {
+      "clip_number": 6,
+      "duration": "10s",
+      "facial_expression": "Confident Call-to-Action",
+      "midjourney_v6_prompt": "Photorealistic 3D portrait of @ME AI news anchor wearing dark navy tech suit with glowing cyan lapel pin, expression of Confident Call-to-Action, standing in futuristic cyber studio with glowing red holographic attack map background reading \"ALERT\", vertical 9:16 aspect ratio, cinematic lighting, 8k resolution --ar 9:16 --v 6.0",
+      "dall_e_3_prompt": "A high-end 3D visual of a professional cyber analyst anchor named @ME in a futuristic newsroom. Facial expression: Confident Call-to-Action. The background features a glowing red zero-day threat radar overlay and digital telemetry screens. Vertical 9:16 portrait composition."
+    }
+  ]
+}
