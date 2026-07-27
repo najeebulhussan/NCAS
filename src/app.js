@@ -173,20 +173,21 @@ function updateTpUI() {
 
 // 4. Master Prompts Code Blocks
 function initPrompts() {
-  const omniCode = `# MASTER OMNIFLASH AGENT PROMPT (v2.0)
+  const omniCode = `# MASTER OMNIFLASH AGENT PROMPT (v2.1 - Google Flow Ready)
 ROLE: Award-winning AI News Director & Cyber Security Broadcast Specialist.
-OBJECTIVE: Produce 60s Vertical Video Script & Asset Package (@NajeebCyber).
-FORMAT: Vertical (9:16) • Duration: 60 Seconds
+OBJECTIVE: Produce 60s Vertical Video Script Package in 6 x 10-second scene clips (@NajeebCyber).
+FORMAT: 6 Clips x 10 Seconds Each (60s Total) • Vertical (9:16)
 PALETTE: Cyber Blue (#0B132B), Electric Cyan (#00F0FF), Alert Red (#FF0055).
 ANCHOR: @ME (AI Avatar Anchor in sleek tech navy suit)
 STUDIO: High-tech virtual studio with world attack heatmap, glowing digital globe & lower thirds.`;
 
-  const avatarCode = `# MASTER PROMPT – 1 Min Weekly Cyber News (AI Avatar Anchor)
-INTRO (0-6s): "Welcome to Weekly Cyber News. I'm @ME, bringing you this week's biggest cybersecurity stories..."
-STORY 1 (6-20s): "Phishing attacks are rapidly evolving into real-time session hijacking..."
-STORY 2 (20-36s): "Autonomous AI agents demonstrate capabilities to scan, exploit, and breach vulnerable endpoints..."
-STORY 3 (36-50s): "Global cyber threat landscape intensifies with rising identity attacks..."
-OUTRO (50-60s): "Stay informed, stay protected. Follow @NajeebCyber for daily updates."`;
+  const avatarCode = `# MASTER PROMPT – 1 Min Weekly Cyber News (Google Flow 10s Scene Standard)
+CLIP 1 (00:00 - 00:10): "Welcome to Weekly Cyber News. I'm @ME, bringing you this week's biggest cybersecurity stories..."
+CLIP 2 (00:10 - 00:20): "First up: Security researchers reveal that phishing attacks are rapidly evolving into real-time session hijacking..."
+CLIP 3 (00:20 - 00:30): "Attackers bypass traditional multi-factor authentication in seconds using automated proxy relay tools..."
+CLIP 4 (00:30 - 00:40): "In AI security: Autonomous AI agents demonstrate capabilities to scan and exploit web endpoints..."
+CLIP 5 (00:40 - 00:50): "Security agencies urge businesses to enforce zero-trust policies, audit access logs, and patch critical systems..."
+CLIP 6 (00:50 - 01:00): "Stay informed, stay protected. Follow @NajeebCyber for daily updates. I'm @ME, see you next week."`;
 
   document.getElementById('codeOmni').innerText = omniCode;
   document.getElementById('codeAvatar').innerText = avatarCode;
