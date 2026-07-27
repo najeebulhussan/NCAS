@@ -1,0 +1,67 @@
+{
+  "metadata": {
+    "project": "NajeebCyber AI Studio (NCAS)",
+    "handle": "@NajeebCyber",
+    "topic": "Global Cyber Attack Surge",
+    "language": "UR",
+    "totalClipsCount": 6,
+    "generatedAt": "2026-07-27T22:20:21.225Z"
+  },
+  "audioClips": [
+    {
+      "clipId": 1,
+      "timestamp": "00:00 - 00:10",
+      "durationSeconds": 10,
+      "speakerVoice": "Urdu Male AI Tech Voice (Pakistani Accent)",
+      "textToSpeak": "ہفتہ وار سائبر نیوز میں خوش آمدید ۔ میں @ME ہوں، آپ کے لیے گلوبل سائبر اٹیک سرج سے متعلق ایک فوری سیکورٹی بلیٹن لا رہا ہوں ۔",
+      "speechRate": "1.05x",
+      "pitch": "0.98x (Authoritative Newsroom Pitch)"
+    },
+    {
+      "clipId": 2,
+      "timestamp": "00:10 - 00:20",
+      "durationSeconds": 10,
+      "speakerVoice": "Urdu Male AI Tech Voice (Pakistani Accent)",
+      "textToSpeak": "سب سے پہلے: سیکیورٹی محققین عالمی سائبر حملے کے اضافے کے بارے میں ایک اہم مشاورت کی اطلاع دیتے ہیں، جس میں فوری طور پر تخفیف پر زور دیا جاتا ہے ۔ دنیا بھر میں سیکیورٹی ٹیمیں اور تجزیہ کار اس پیشرفت کی نگرانی کر رہے ہیں ۔",
+      "speechRate": "1.05x",
+      "pitch": "0.98x (Authoritative Newsroom Pitch)"
+    },
+    {
+      "clipId": 3,
+      "timestamp": "00:20 - 00:30",
+      "durationSeconds": 10,
+      "speakerVoice": "Urdu Male AI Tech Voice (Pakistani Accent)",
+      "textToSpeak": "ابتدائی رپورٹس ممکنہ صفر دن یا اسناد کے استحصال کے خطرات کی نشاندہی کرتی ہیں جو اختتامی مقامات پر غیر مجاز پس منظر کی نقل و حرکت کی اجازت دیتا ہے ۔",
+      "speechRate": "1.05x",
+      "pitch": "0.98x (Authoritative Newsroom Pitch)"
+    },
+    {
+      "clipId": 4,
+      "timestamp": "00:30 - 00:40",
+      "durationSeconds": 10,
+      "speakerVoice": "Urdu Male AI Tech Voice (Pakistani Accent)",
+      "textToSpeak": "مزید برآں، AI کی مدد سے اسکیننگ اسکرپٹس استحصال کی کھڑکیوں کو تیز کر رہے ہیں، جس سے خودکار پیچ مینجمنٹ ضروری ہو گئی ہے ۔",
+      "speechRate": "1.05x",
+      "pitch": "0.98x (Authoritative Newsroom Pitch)"
+    },
+    {
+      "clipId": 5,
+      "timestamp": "00:40 - 00:50",
+      "durationSeconds": 10,
+      "speakerVoice": "Urdu Male AI Tech Voice (Pakistani Accent)",
+      "textToSpeak": "تنظیموں پر زور دیا جاتا ہے کہ وہ رسائی کے نوشتہ جات کا آڈٹ کریں، کثیر عنصر کی سخت توثیق نافذ کریں، اور فوری طور پر وینڈر سیکیورٹی پیچ لگائیں ۔",
+      "speechRate": "1.05x",
+      "pitch": "0.98x (Authoritative Newsroom Pitch)"
+    },
+    {
+      "clipId": 6,
+      "timestamp": "00:50 - 01:00",
+      "durationSeconds": 10,
+      "speakerVoice": "Urdu Male AI Tech Voice (Pakistani Accent)",
+      "textToSpeak": "باخبر رہیں، محفوظ رہیں، اور یاد رکھیں - سائبر بیداری آپ کا سب سے مضبوط دفاع ہے ۔ مزید اپ ڈیٹس کے لیے @ NajeebCyber کو فالو کریں ۔ میں @ME ہوں، اگلے ہفتے ملیں گے ۔",
+      "speechRate": "1.05x",
+      "pitch": "0.98x (Authoritative Newsroom Pitch)"
+    }
+  ],
+  "webSpeechJsPlayback": "\n// Web Speech API Live Playback Engine\nfunction playVoiceoverSequence() {\n  const clips = [\"ہفتہ وار سائبر نیوز میں خوش آمدید ۔ میں @ME ہوں، آپ کے لیے گلوبل سائبر اٹیک سرج سے متعلق ایک فوری سیکورٹی بلیٹن لا رہا ہوں ۔\",\"سب سے پہلے: سیکیورٹی محققین عالمی سائبر حملے کے اضافے کے بارے میں ایک اہم مشاورت کی اطلاع دیتے ہیں، جس میں فوری طور پر تخفیف پر زور دیا جاتا ہے ۔ دنیا بھر میں سیکیورٹی ٹیمیں اور تجزیہ کار اس پیشرفت کی نگرانی کر رہے ہیں ۔\",\"ابتدائی رپورٹس ممکنہ صفر دن یا اسناد کے استحصال کے خطرات کی نشاندہی کرتی ہیں جو اختتامی مقامات پر غیر مجاز پس منظر کی نقل و حرکت کی اجازت دیتا ہے ۔\",\"مزید برآں، AI کی مدد سے اسکیننگ اسکرپٹس استحصال کی کھڑکیوں کو تیز کر رہے ہیں، جس سے خودکار پیچ مینجمنٹ ضروری ہو گئی ہے ۔\",\"تنظیموں پر زور دیا جاتا ہے کہ وہ رسائی کے نوشتہ جات کا آڈٹ کریں، کثیر عنصر کی سخت توثیق نافذ کریں، اور فوری طور پر وینڈر سیکیورٹی پیچ لگائیں ۔\",\"باخبر رہیں، محفوظ رہیں، اور یاد رکھیں - سائبر بیداری آپ کا سب سے مضبوط دفاع ہے ۔ مزید اپ ڈیٹس کے لیے @ NajeebCyber کو فالو کریں ۔ میں @ME ہوں، اگلے ہفتے ملیں گے ۔\"];\n  let index = 0;\n  function speakNext() {\n    if (index >= clips.length) return;\n    const utterance = new SpeechSynthesisUtterance(clips[index]);\n    utterance.lang = 'ur-PK';\n    utterance.rate = 1.05;\n    utterance.onend = () => { index++; speakNext(); };\n    window.speechSynthesis.speak(utterance);\n  }\n  speakNext();\n}\n  "
+}

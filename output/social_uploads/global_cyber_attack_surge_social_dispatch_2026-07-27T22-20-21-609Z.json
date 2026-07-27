@@ -1,0 +1,56 @@
+{
+  "metadata": {
+    "project": "NajeebCyber AI Studio (NCAS)",
+    "handle": "@NajeebCyber",
+    "topic": "Global Cyber Attack Surge",
+    "scheduledTime": "2026-07-27T22:20:21.610Z",
+    "status": "READY_FOR_DISPATCH"
+  },
+  "platforms": {
+    "youtubeShorts": {
+      "platform": "YouTube Shorts",
+      "endpoint": "https://www.googleapis.com/upload/youtube/v3/videos?uploadType=resumable&part=snippet,status",
+      "videoTitle": "Global Cyber Attack Surge #Shorts",
+      "description": "🚨 Urgent Cyber Security Alert regarding Global Cyber Attack Surge.\n\nStay protected, patch your systems, and follow @NajeebCyber for daily intelligence.\n\n#CyberSecurity #InfoSec #Hacking #ZeroDay #TechNews #NajeebCyber",
+      "tags": [
+        "cybersecurity",
+        "infosec",
+        "zero day",
+        "hacking news",
+        "najeebcyber",
+        "shorts"
+      ],
+      "categoryId": "28",
+      "privacyStatus": "public",
+      "selfDeclaredMadeForKids": false
+    },
+    "tikTok": {
+      "platform": "TikTok",
+      "endpoint": "https://open.tiktokapis.com/v2/post/publish/video/init/",
+      "caption": "🚨 Global Cyber Attack Surge! #CyberSecurity #ZeroDay #InfoSec #TechTok #NajeebCyber",
+      "privacyLevel": "PUBLIC_TO_EVERYONE",
+      "allowComment": true,
+      "allowDuet": true,
+      "allowStitch": true
+    },
+    "instagramReels": {
+      "platform": "Instagram Reels",
+      "endpoint": "https://graph.facebook.com/v19.0/{ig-user-id}/media",
+      "mediaType": "REELS",
+      "caption": "🚨 Global Cyber Attack Surge\n\nKey Action: Audit logs & enforce MFA immediately.\n\nFollow @NajeebCyber for daily threat bulletins.\n.\n.\n.#cybersecurity #infosec #zeroday #cyberattack #reels #najeebcyber",
+      "coverFrameTimestampMs": 3000
+    },
+    "linkedIn": {
+      "platform": "LinkedIn Video Post",
+      "endpoint": "https://api.linkedin.com/v2/assets?action=registerUpload",
+      "postAuthor": "urn:li:organization:najeebcyber",
+      "commentary": "🛡️ CYBER THREAT ADVISORY: Global Cyber Attack Surge\n\nOur SOC threat radar highlights potential zero-day risks. Organizations are advised to enforce Zero-Trust controls and audit endpoint access logs.\n\n#CyberSecurity #RiskManagement #CISO #InfoSec #NajeebCyber",
+      "visibility": "PUBLIC"
+    },
+    "xTwitter": {
+      "platform": "X (Twitter)",
+      "endpoint": "https://upload.twitter.com/1.1/media/upload.json",
+      "tweetText": "🚨 BREAKING CYBER ALERT: Global Cyber Attack Surge\n\nFollow @NajeebCyber for live updates. #CyberSecurity #ZeroDay #InfoSec"
+    }
+  }
+}
