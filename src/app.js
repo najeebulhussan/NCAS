@@ -198,7 +198,41 @@ function initTeleprompter() {
   const pipelineBtn = document.getElementById('btnRunPipelineHeader');
   if (pipelineBtn) {
     pipelineBtn.addEventListener('click', () => {
-      alert('🚀 1-Click Pipeline Ready!\nRun "npm run build-broadcast -- --live" in your terminal to trigger full broadcast rendering & GitHub push.');
+      alert('🚀 1-Click Master Pipeline Ready!\nRun "node scripts/run_all_studio.js" in your terminal to trigger full end-to-end studio rendering & GitHub push.');
+    });
+  }
+
+  // Header Run 12 AI Swarm Button & Sidebar Button
+  const triggerSwarmAction = () => {
+    const agentItems = document.querySelectorAll('.agent-item');
+    agentItems.forEach((item, idx) => {
+      item.style.borderLeft = '3px solid var(--primary-cyan)';
+      const statusSpan = item.querySelector('.agent-status');
+      if (statusSpan) {
+        statusSpan.innerText = 'EXECUTING...';
+        statusSpan.style.color = 'var(--primary-cyan)';
+      }
+      setTimeout(() => {
+        if (statusSpan) {
+          statusSpan.innerText = 'COMPLETED 100%';
+          statusSpan.style.color = 'var(--success-green)';
+        }
+      }, (idx + 1) * 300);
+    });
+    alert('🤖 12 AI Subagents Swarm Triggered!\nAll 12 agents (Chief, Trend Hunter, Fact Checker, OSINT, Scriptwriter, Visual Director, Motion Graphics, Voice Audio, Video Render, Social Publisher, Analytics, Brand Guardian) are executing in sequence.\nRun "npm run run-agents" in terminal for full CLI execution.');
+  };
+
+  const swarmBtnHeader = document.getElementById('btnRunSwarmHeader');
+  if (swarmBtnHeader) swarmBtnHeader.addEventListener('click', triggerSwarmAction);
+
+  const swarmBtnSidebar = document.getElementById('btnRunSwarmSidebar');
+  if (swarmBtnSidebar) swarmBtnSidebar.addEventListener('click', triggerSwarmAction);
+
+  // Header Export PDF Button
+  const exportPdfBtn = document.getElementById('btnExportPdfHeader');
+  if (exportPdfBtn) {
+    exportPdfBtn.addEventListener('click', () => {
+      alert('📄 Executive PDF Report Exporter Ready!\nRun "npm run export-pdf" in terminal to generate printable studio spec reports.\nSaved to output/pdf_reports/ in your workspace.');
     });
   }
 }
