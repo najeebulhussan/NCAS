@@ -1,0 +1,21 @@
+{
+  "name": "ncas-cyber-studio",
+  "version": "1.0.0",
+  "description": "NajeebCyber AI Studio (NCAS) - Broadcast Command & Production Engine",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "serve src -l 786",
+    "update-chat": "node scripts/fetch_chat_updates.js"
+  },
+  "keywords": [
+    "cybersecurity",
+    "ai-newsroom",
+    "ncas",
+    "video-generation"
+  ],
+  "author": "NajeebCyber",
+  "license": "MIT",
+  "dependencies": {
+    "serve": "^14.2.4"
+  }
+}
