@@ -16,7 +16,8 @@
     "watchdog": "node scripts/cisa_watchdog.js",
     "generate-voiceover": "node scripts/generate_voiceover.js",
     "publish-social": "node scripts/publish_social.js",
-    "daemon": "node scripts/daemon_loop.js"
+    "daemon": "node scripts/daemon_loop.js",
+    "setup-ffmpeg": "node scripts/setup_ffmpeg_env.js"
   },
   "keywords": [
     "cybersecurity",

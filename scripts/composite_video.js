@@ -101,15 +101,25 @@ console.log(`🖥️ Windows Render Batch File: ${batFile}`);
 console.log(`🐧 Linux/Mac Render Script:   ${shFile}`);
 console.log(`📋 Concatenation List:        ${concatListFile}\n`);
 
-// Check if FFmpeg is in PATH
+// Check if FFmpeg is in PATH or bin/
+const binFfmpeg = path.join(__dirname, '../bin/ffmpeg.exe');
+let ffmpegBin = '';
+
 try {
   execSync('ffmpeg -version', { stdio: 'ignore' });
-  console.log(`[FFmpeg Detected] Executing video composite render...`);
-  // If FFmpeg is available and scene files exist, run command
+  ffmpegBin = 'ffmpeg';
 } catch (e) {
-  console.log(`ℹ️ Note: FFmpeg executable not found in PATH.`);
+  if (fs.existsSync(binFfmpeg)) {
+    ffmpegBin = `"${binFfmpeg}"`;
+  }
+}
+
+if (ffmpegBin) {
+  console.log(`[FFmpeg Detected: ${ffmpegBin}] Executing video composite render...`);
+} else {
+  console.log(`ℹ️ Note: FFmpeg executable not found in PATH or bin/ffmpeg.exe.`);
   console.log(`   The complete render script and batch file have been saved to output/renders/`);
-  console.log(`   Once FFmpeg is installed, run: "${batFile}" to generate the MP4 video!`);
+  console.log(`   To install FFmpeg automatically, run: "npm run setup-ffmpeg"`);
 }
 
 console.log(`\n-------------------------------------------------------------`);
