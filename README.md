@@ -1,6 +1,8 @@
 # NajeebCyber AI Studio (NCAS)
 
-> **Build the world's first AI-driven cybersecurity news studio focused on fast, accurate, visually compelling cyber news, threat intelligence, and awareness content.**
+> **An AI-powered cyber content creation studio and operations platform for cybersecurity, cybercrime awareness, education, campaigns, and trusted publishing.**
+
+See the [Master Product Roadmap](docs/ncas_master_roadmap.md) for the approved product direction, GUI, agent, Slack, governance, and implementation phases.
 
 ---
 

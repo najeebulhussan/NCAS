@@ -838,9 +838,60 @@ function initGuiModals() {
           clearInterval(timer);
           btnStartPipelineGui.disabled = false;
           btnStartPipelineGui.innerHTML = `<i class="fa-solid fa-check"></i> Master Run Complete!`;
-          alert('🏆 Master Broadcast Studio Pipeline complete!\nAll generated scripts, specs, subtitles & thumbnails pushed to GitHub.');
+          alert("🏆 Master 9-Step Pipeline Execution Complete!\nAll production assets generated and synced to GitHub!");
         }
       }, 1000);
+    });
+  }
+
+  // Strategy Lab & Niche Intake Generator Handler
+  const btnGenerateStrategy = document.getElementById('btnGenerateStrategy');
+  if (btnGenerateStrategy) {
+    btnGenerateStrategy.addEventListener('click', async () => {
+      const nicheName = document.getElementById('nicheNameInput').value;
+      const goal = document.getElementById('campaignGoalSelect').value;
+      const timeframeDays = document.getElementById('timeframeSelect').value;
+      const display = document.getElementById('briefContentDisplay');
+
+      btnGenerateStrategy.disabled = true;
+      btnGenerateStrategy.innerHTML = `<i class="fa-solid fa-circle-notch fa-spin"></i> Chief Editor Analyzing Strategy...`;
+
+      try {
+        const response = await fetch('http://localhost:8000/api/strategy/niche-intake', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ nicheName, goal, timeframeDays })
+        });
+        const data = await response.json();
+        const plan = data.jobSummary?.metadata?.editorialPlan || {};
+
+        display.innerHTML = `
+          <div class="brief-pill"><i class="fa-solid fa-crown"></i> Chief Editor Strategy Generated (Job ID: ${data.jobSummary?.jobId})</div>
+          <h4 style="color: var(--primary-cyan); margin-bottom: 0.4rem;">Niche: ${plan.niche}</h4>
+          <p style="font-size: 0.85rem; color: var(--text-dim); margin-bottom: 0.8rem;">Goal: <strong>${plan.goal}</strong> | Target Audience: <strong>${plan.targetAudience}</strong></p>
+          
+          <h5 style="color: var(--text-main); font-size: 0.85rem; margin-bottom: 0.4rem;">Content Pillars:</h5>
+          <ul style="padding-left: 1.2rem; font-size: 0.82rem; color: var(--text-muted); margin-bottom: 1rem;">
+            ${(plan.contentPillars || []).map(p => `<li>${p}</li>`).join('')}
+          </ul>
+
+          <h5 style="color: var(--text-main); font-size: 0.85rem; margin-bottom: 0.4rem;">Planned Content Briefs (30-Day Campaign):</h5>
+          <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+            ${(plan.contentBriefs || []).map(b => `
+              <div style="background: rgba(4,8,20,0.6); border: 1px solid rgba(0,240,255,0.2); padding: 8px 12px; border-radius: 6px; font-size: 0.8rem;">
+                <strong style="color: var(--primary-cyan);">${b.briefId}:</strong> ${b.title} (${b.targetClipSlots})
+              </div>
+            `).join('')}
+          </div>
+          
+          <button class="btn-sm btn-accent" style="margin-top: 1rem; width: 100%;" onclick="alert('✅ Strategy Approved! Transitioning Content Job to PLANNED state.')"><i class="fa-solid fa-check-double"></i> Approve Strategy & Begin Researching</button>
+        `;
+      } catch (err) {
+        display.innerHTML = `<div style="color: var(--accent-magenta); font-weight: bold;">❌ Error connecting to Platform API Gateway (http://localhost:8000). Ensure node apps/api/server.js is running.</div>`;
+      } finally {
+        btnGenerateStrategy.disabled = false;
+        btnGenerateStrategy.innerHTML = `<i class="fa-solid fa-wand-magic-sparkles"></i> Generate Strategy via Chief Editor Agent`;
+      }
     });
   }
 }
