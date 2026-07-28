@@ -1,0 +1,106 @@
+version: '3.8'
+
+services:
+  # 1. PostgreSQL 16 Database
+  db:
+    image: postgres:16-alpine
+    container_name: ncas_db
+    restart: always
+    environment:
+      POSTGRES_DB: ncas_production
+      POSTGRES_USER: ncas_admin
+      POSTGRES_PASSWORD: ncas_secure_password_2026
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ncas_admin -d ncas_production"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # 2. Redis 7 Cache & Event Queue
+  redis:
+    image: redis:7-alpine
+    container_name: ncas_redis
+    restart: always
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # 3. MinIO S3-Compatible Object Storage
+  minio:
+    image: minio/minio:latest
+    container_name: ncas_minio
+    restart: always
+    command: server /data --console-address ":9001"
+    environment:
+      MINIO_ROOT_USER: ncas_minio_admin
+      MINIO_ROOT_PASSWORD: ncas_minio_password_2026
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    volumes:
+      - minio_data:/data
+
+  # 4. NCAS Platform API Gateway
+  api:
+    build:
+      context: .
+      dockerfile: infrastructure/docker/Dockerfile.api
+    container_name: ncas_api
+    restart: always
+    ports:
+      - "8000:8000"
+    environment:
+      PORT: 8000
+      DATABASE_URL: postgresql://ncas_admin:ncas_secure_password_2026@db:5432/ncas_production
+      REDIS_URL: redis://redis:6379
+      MINIO_ENDPOINT: minio:9000
+      MINIO_ACCESS_KEY: ncas_minio_admin
+      MINIO_SECRET_KEY: ncas_minio_password_2026
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+
+  # 5. NCAS Creator Studio Dashboard
+  dashboard:
+    build:
+      context: .
+      dockerfile: infrastructure/docker/Dockerfile.dashboard
+    container_name: ncas_dashboard
+    restart: always
+    ports:
+      - "786:786"
+    environment:
+      PORT: 786
+      NEXT_PUBLIC_API_URL: http://localhost:8000
+    depends_on:
+      - api
+
+  # 6. Nginx Reverse Proxy
+  nginx:
+    image: nginx:alpine
+    container_name: ncas_nginx
+    restart: always
+    ports:
+      - "80:80"
+    volumes:
+      - ./infrastructure/nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - dashboard
+      - api
+
+volumes:
+  postgres_data:
+  redis_data:
+  minio_data:

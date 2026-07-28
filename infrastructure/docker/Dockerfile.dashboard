@@ -1,0 +1,12 @@
+FROM node:20-alpine
+
+WORKDIR /app
+
+RUN npm install -g serve
+
+COPY package*.json ./
+COPY src/ ./src/
+
+EXPOSE 786
+
+CMD ["serve", "src", "-l", "786"]
