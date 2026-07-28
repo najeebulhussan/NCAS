@@ -25,7 +25,8 @@
     "api": "node apps/api/server.js",
     "slack-bot": "node scripts/slack_bot.js",
     "validate-env": "node scripts/validate_env.js",
-    "health-check": "node scripts/system_health_check.js"
+    "health-check": "node scripts/system_health_check.js",
+    "export-multilingual": "node scripts/export_multilingual_audio.js"
   },
   "keywords": [
     "cybersecurity",
