@@ -1,0 +1,30 @@
+{
+  "timestamp": "2026-07-28T00:32:06.966Z",
+  "results": [
+    {
+      "check": "Monorepo Shared Package",
+      "status": "PASS",
+      "details": "17 Job States, 22 Agent Roles Loaded"
+    },
+    {
+      "check": "State Machine Engine",
+      "status": "PASS",
+      "details": "Initial State: DISCOVERED"
+    },
+    {
+      "check": "Base Agent Swarm Engine",
+      "status": "PASS",
+      "details": "Agent Name: undefined"
+    },
+    {
+      "check": "Platform API Gateway (Port 8000)",
+      "status": "PASS",
+      "details": "HTTP 200 OK Live"
+    },
+    {
+      "check": "Web Command Center (Port 786)",
+      "status": "PASS",
+      "details": "HTTP 200 OK Live"
+    }
+  ]
+}
