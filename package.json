@@ -23,7 +23,8 @@
     "run-agents": "node agents/run_all_agents.js",
     "image-director": "node scripts/image_director.js",
     "api": "node apps/api/server.js",
-    "slack-bot": "node scripts/slack_bot.js"
+    "slack-bot": "node scripts/slack_bot.js",
+    "validate-env": "node scripts/validate_env.js"
   },
   "keywords": [
     "cybersecurity",
