@@ -161,10 +161,10 @@
             </div>
           </div>
 
-          <!-- Script Editor / Viewer -->
+          <!-- Script Editor / Viewer & 12-Tab Content Studio -->
           <div class="script-editor-card glass-panel">
             <div class="panel-header">
-              <h3><i class="fa-solid fa-scroll"></i> Active Broadcast Script (60s)</h3>
+              <h3><i class="fa-solid fa-scroll"></i> Content Studio Workspace (Job ID: JOB-2026-001)</h3>
               <div class="header-actions">
                 <button class="btn-sm btn-outline" id="btnTranslateScript"><i class="fa-solid fa-language"></i> Urdu / English</button>
                 <button class="btn-sm btn-outline" id="btnExportSubtitles"><i class="fa-solid fa-closed-captioning"></i> Subtitles (.SRT)</button>
@@ -173,10 +173,49 @@
               </div>
             </div>
 
-            <div class="script-sections" id="scriptSectionsContainer">
-              <!-- Rendered script blocks -->
+            <!-- Section 5: 12 Content Studio Tabs Bar -->
+            <div class="cs-subtabs-bar">
+              <button class="cs-subtab active" data-cstab="cs-script"><i class="fa-solid fa-scroll"></i> Script</button>
+              <button class="cs-subtab" data-cstab="cs-overview"><i class="fa-solid fa-gauge"></i> Overview</button>
+              <button class="cs-subtab" data-cstab="cs-brief"><i class="fa-solid fa-clipboard-list"></i> Brief</button>
+              <button class="cs-subtab" data-cstab="cs-research"><i class="fa-solid fa-magnifying-glass"></i> Research</button>
+              <button class="cs-subtab" data-cstab="cs-factcheck"><i class="fa-solid fa-check-double"></i> Fact Check</button>
+              <button class="cs-subtab" data-cstab="cs-visual"><i class="fa-solid fa-palette"></i> Visual Plan</button>
+              <button class="cs-subtab" data-cstab="cs-assets"><i class="fa-solid fa-folder-open"></i> Assets</button>
+              <button class="cs-subtab" data-cstab="cs-production"><i class="fa-solid fa-film"></i> Production</button>
+              <button class="cs-subtab" data-cstab="cs-publishing"><i class="fa-solid fa-paper-plane"></i> Publishing</button>
+              <button class="cs-subtab" data-cstab="cs-analytics"><i class="fa-solid fa-chart-line"></i> Analytics</button>
+              <button class="cs-subtab" data-cstab="cs-comments"><i class="fa-solid fa-comments"></i> Comments</button>
+              <button class="cs-subtab" data-cstab="cs-history"><i class="fa-solid fa-clock-rotate-left"></i> History</button>
             </div>
-          </div>
+
+            <div class="cs-tab-content active" id="cs-script">
+              <div class="script-sections" id="scriptSectionsContainer">
+                <!-- Rendered script blocks -->
+              </div>
+            </div>
+
+            <div class="cs-tab-content" id="cs-overview">
+              <div class="cs-info-box">
+                <h4><i class="fa-solid fa-gauge"></i> Job Overview & State Machine Telemetry</h4>
+                <div class="a-metric-card" style="margin-top: 10px;">
+                  <span class="a-m-val text-cyan">STRATEGY_REVIEW</span>
+                  <span class="a-m-lbl">Current State Machine Stage</span>
+                </div>
+                <p style="margin-top: 10px; font-size: 0.85rem; color: var(--text-dim);">Assigned Niche: <strong>Ethical Hacking & AI Defense 2026</strong> | Handle: <strong>@NajeebCyber</strong></p>
+              </div>
+            </div>
+
+            <div class="cs-tab-content" id="cs-research">
+              <div class="cs-info-box">
+                <h4><i class="fa-solid fa-magnifying-glass"></i> Claim-Evidence Verification Matrix</h4>
+                <table style="width: 100%; font-size: 0.8rem; margin-top: 10px; border-collapse: collapse;">
+                  <tr style="color: var(--primary-cyan); text-align: left;"><th>Claim ID</th><th>Statement</th><th>Source</th><th>Status</th></tr>
+                  <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);"><td>CLAIM-01</td><td>Active unauthenticated RCE exploit</td><td>CISA KEV Catalog</td><td><span class="badge-tag" style="background: var(--success-green); color: #000;">VERIFIED (99%)</span></td></tr>
+                  <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);"><td>CLAIM-02</td><td>Exploitation targeting financial servers</td><td>NIST NVD (CVE-2026-1084)</td><td><span class="badge-tag" style="background: var(--success-green); color: #000;">VERIFIED (95%)</span></td></tr>
+                </table>
+              </div>
+            </div>
         </div>
       </div>
 

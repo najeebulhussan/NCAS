@@ -58,6 +58,26 @@ function initTabs() {
       document.getElementById(tabId).classList.add('active');
     });
   });
+
+  // Content Studio Sub-Tabs Init
+  initContentStudioSubtabs();
+}
+
+function initContentStudioSubtabs() {
+  const csBtns = document.querySelectorAll('.cs-subtab');
+  const csContents = document.querySelectorAll('.cs-tab-content');
+
+  csBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      csBtns.forEach(b => b.classList.remove('active'));
+      csContents.forEach(c => c.classList.remove('active'));
+
+      btn.classList.add('active');
+      const csTabId = btn.getAttribute('data-cstab');
+      const targetEl = document.getElementById(csTabId);
+      if (targetEl) targetEl.classList.add('active');
+    });
+  });
 }
 
 // 3. Teleprompter & Video Telecast Simulation (Google Flow 10s Clips Standard)

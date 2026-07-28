@@ -1549,6 +1549,67 @@ body {
   margin-bottom: 6px;
 }
 
+/* Section 5: Content Studio Sub-Tabs Styles */
+.cs-subtabs-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  background: rgba(4, 8, 20, 0.6);
+  padding: 6px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 240, 255, 0.15);
+  margin-bottom: 1rem;
+}
+
+.cs-subtab {
+  background: transparent;
+  border: none;
+  color: var(--text-dim);
+  padding: 6px 12px;
+  font-size: 0.75rem;
+  font-family: var(--font-body);
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s ease;
+}
+
+.cs-subtab:hover {
+  color: var(--primary-cyan);
+  background: rgba(0, 240, 255, 0.08);
+}
+
+.cs-subtab.active {
+  background: linear-gradient(90deg, var(--primary-cyan), var(--secondary-blue));
+  color: #040814;
+  font-weight: 700;
+}
+
+.cs-tab-content {
+  display: none;
+}
+
+.cs-tab-content.active {
+  display: block;
+}
+
+.cs-info-box {
+  background: rgba(16, 31, 66, 0.3);
+  border: 1px solid rgba(0, 240, 255, 0.2);
+  padding: 1.2rem;
+  border-radius: 8px;
+}
+
+.cs-info-box h4 {
+  font-size: 0.95rem;
+  color: var(--primary-cyan);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 /* Footer */
 .app-footer {
   position: relative;
